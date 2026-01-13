@@ -1,0 +1,33 @@
+# ninja log v7
+3	43	7899194623054677	CMakeFiles/clean.additional	37b0d51dcd806163
+43	196	7899194623446625	clean	42284db68ed9c725
+42	228	7899282597801126	CMakeFiles/Testing.dir/Core/Src/sysmem.c.obj	f81f652161fec459
+56	172	7899282597930886	CMakeFiles/Testing.dir/startup_stm32f401xe.s.obj	db7d3e91d9473a26
+48	318	7899282597859122	CMakeFiles/Testing.dir/Core/Src/syscalls.c.obj	c5f5d83818475493
+30	387	7899282597688089	CMakeFiles/Testing.dir/Core/Src/stm32f4xx_it.c.obj	6f930ce345f81115
+516	1351	7899194633716144	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj	55bd4a475c05fa2e
+91	699	7899194629468238	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj	5de4675e7674b908
+36	419	7899282597745322	CMakeFiles/Testing.dir/Core/Src/stm32f4xx_hal_msp.c.obj	fa2386e4da2b2cd0
+560	1090	7899194634162216	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj	fa113bb3dd22a33a
+53	641	7899194629084837	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj	61ec83963e11ba8
+195	1032	7899194630503447	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj	91a91a5488a22ea7
+71	1181	7899194629267858	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj	45c387f314cbf66b
+22	301	7900006382521535	CMakeFiles/Testing.dir/Core/Src/main.c.obj	972eb81278cccfd2
+78	798	7899194629348036	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj	dc518c9c7352c395
+641	1303	7899194634968739	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj	7c2d93486198ca52
+85	807	7899194629403117	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj	f4c31013415054f7
+526	1342	7899194633816347	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj	e76250b9b4b6a308
+1021	1650	7899194638769084	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj	93807188756f17c8
+700	1311	7899194635554622	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj	ad59a4a4a642f781
+808	1448	7899194636638637	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj	903dc48a3598d87e
+798	1266	7899194636538496	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj	64e2a5250ec506bb
+710	1307	7899194635655394	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj	eb5a9b9bcc2236a8
+302	509	7900052842459183	Testing.elf	69f983b08bb94ffa
+22	398	7900059272853572	build.ninja	cc05686d1e8243ed
+64	962	7899194629202738	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj	97eb43c60120bd93
+58	1006	7899194629137799	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj	da464b654352549
+1006	1410	7899194638610519	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj	a27db93467ee4757
+962	1746	7899194638179174	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj	45fc69a160034aa8
+4	301	7900052839484657	CMakeFiles/Testing.dir/Core/Src/ssd_1306.c.obj	be572ed6ca264170
+22	398	7900059272485928	C:/Users/Vanessa/OneDrive - Rodrigues/Documents/Personal Docs/!!Programming/ST-Handheld/build/Debug/cmake_install.cmake	cc05686d1e8243ed
+22	398	7900059272571616	C:/Users/Vanessa/OneDrive - Rodrigues/Documents/Personal Docs/!!Programming/ST-Handheld/build/Debug/cmake/stm32cubemx/cmake_install.cmake	cc05686d1e8243ed
