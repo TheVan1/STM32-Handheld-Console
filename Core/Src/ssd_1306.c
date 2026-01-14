@@ -120,6 +120,38 @@ void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c1) {
 
 void I2C_SSD1306_Update_Whole_Display(
     uint8_t SSD1306_FrameBufferPages[128][8]) {
+
+  //pre-optimisation stage
+
+  //search through our "old" buffer, and compare it to the new buffer
+  //any time that there is a gap larger than 12 bytes of unchanged values between our frames
+  //it is faster to select a new set of columns and pages to write to than writing redundant pages
+  //LESS than 12 bytes is slower, due to the overhead of selecting new pages (see comments below)
+
+  //create a buffer of changed bytes, which is any differences between our current buffer and our old buffer
+  //each BIT corresponds to a page, as a boolean
+  // uint8_t changed_buffer[128] = {};
+
+  // for(uint8_t column = 0; column < 128; column++){
+  //   for(uint8_t page = 0; page < 8; page++){
+  //     if(SSD1306_FrameBufferPages[column][page] != LastBuffer[column][page]){
+  //       changed_buffer[column] |= 1 << page;
+  //     }
+  //   }
+  // }
+
+  //
+
+
+
+
+
+
+
+
+
+
+
   // Set the columns and pages to be written to
 
   // 0x80 - Control byte
