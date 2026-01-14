@@ -1,11 +1,12 @@
 // DONE ~~TODO: HIGH PRIORITY; spin all SSD1306 functions into their own file,
-// and integrate via header files~~ INFO: all SSD1306 functions rely on a 128x8,
-// uint8 array. in this array, each individual *bit* is a single pixel
-// TODO: ISR call of Update_Whole_Display X times per second
+// and integrate via header files~~ 
+
+// DONE ~~TODO: ISR call of Update_Whole_Display X times per second~~
+
 // TODO: write functions to draw squares, lines, circles etc.
-// TODO: LOW PRIORITY; less naive integration of drawing functions to speed up
-// drawing (currently speed is adequate, especially with fast mode I2C, must do
-// testing on speediness before rewrite)
+
+// INFO: all SSD1306 functions rely on a 128x8,
+// uint8 array. in this array, each individual *bit* is a single pixel
 
 #include "main.h"
 #include <stdint.h>
@@ -120,37 +121,6 @@ void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c1) {
 
 void I2C_SSD1306_Update_Whole_Display(
     uint8_t SSD1306_FrameBufferPages[128][8]) {
-
-  //pre-optimisation stage
-
-  //search through our "old" buffer, and compare it to the new buffer
-  //any time that there is a gap larger than 12 bytes of unchanged values between our frames
-  //it is faster to select a new set of columns and pages to write to than writing redundant pages
-  //LESS than 12 bytes is slower, due to the overhead of selecting new pages (see comments below)
-
-  //create a buffer of changed bytes, which is any differences between our current buffer and our old buffer
-  //each BIT corresponds to a page, as a boolean
-  // uint8_t changed_buffer[128] = {};
-
-  // for(uint8_t column = 0; column < 128; column++){
-  //   for(uint8_t page = 0; page < 8; page++){
-  //     if(SSD1306_FrameBufferPages[column][page] != LastBuffer[column][page]){
-  //       changed_buffer[column] |= 1 << page;
-  //     }
-  //   }
-  // }
-
-  //
-
-
-
-
-
-
-
-
-
-
 
   // Set the columns and pages to be written to
 

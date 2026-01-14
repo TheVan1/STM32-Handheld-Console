@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "ssd_1306.h"
 #include "stm32f4xx_hal_adc.h"
+#include "stm32f4xx_hal_tim.h"
 #include "string.h"
 #include <stdint.h>
 /* USER CODE END Includes */
@@ -75,6 +76,7 @@ void Put_Pixel(uint8_t SSD1306_FrameBufferPages[128][8], uint8_t x, uint8_t y,
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+uint8_t SSD1306_FrameBufferPages[128][8] = {{}};
 uint32_t ADC_data[2] = {0};
 /* USER CODE END 0 */
 
@@ -92,12 +94,11 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  // HAL_Init();
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
   // a buffer of the current view on the screen
   // each byte corresponds to a VERTICAL section of 8 (single bit) pixels
-  uint8_t SSD1306_FrameBufferPages[128][8] = {{}};
   uint8_t SSD1306_Persistent_FrameBufferPages[128][8] = {{}};
 
   /* USER CODE END Init */
@@ -121,15 +122,15 @@ int main(void)
   I2C_SSD1306_Screen_Init(&hi2c1);
   HAL_Delay(10);
 
+  HAL_TIM_Base_Start_IT(&htim1);
+
   // start ADC conversions, pre-configured in circular mode. X and Y axis in the
   // array
   HAL_ADC_Start_DMA(&hadc1, ADC_data, 2);
   HAL_Delay(100);
 
-  uint32_t timer_acc = 0;
-  uint16_t frames = 0;
+  uint8_t temp_frame_buffer[128][8] = {{}};
 
-  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -138,41 +139,29 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    TIM1->CNT = 0;
-
 
     // how large the lit up square should be
     uint8_t sigma = 2;
 
     // wipe the frame buffer at the start of each frame
-    memcpy(&SSD1306_FrameBufferPages, &SSD1306_Persistent_FrameBufferPages,
+    memcpy(&temp_frame_buffer, &SSD1306_Persistent_FrameBufferPages,
            sizeof(uint8_t) * 1024);
-    uint8_t corrected_ADC_1 = ADC_data[0] / 2;
-    uint8_t corrected_ADC_2 = (ADC_data[1] / 4);
+
+    uint8_t corrected_ADC_1 = 128 - (ADC_data[0] / 2);
+    uint8_t corrected_ADC_2 = 64 - (ADC_data[1] / 4);
 
     for (int x = -sigma; x < sigma; x++) {
       for (int y = -sigma; y < sigma; y++) {
-        Put_Pixel(SSD1306_FrameBufferPages, x + corrected_ADC_1,
-                  y + corrected_ADC_2, 1);
+        Put_Pixel(temp_frame_buffer, x + corrected_ADC_1, y + corrected_ADC_2,
+                  1);
       }
     }
 
     Put_Pixel(SSD1306_Persistent_FrameBufferPages, corrected_ADC_1,
               corrected_ADC_2, 1);
 
-    //tick
-    HAL_TIM_Base_Start(&htim1);
-    I2C_SSD1306_Update_Whole_Display(SSD1306_FrameBufferPages);
-    //tock
-    HAL_TIM_Base_Stop(&htim1);
-
-    timer_acc += TIM1->CNT;
-    frames++;
-
-    volatile uint32_t a = timer_acc/frames;
-
-
-
+    memcpy(&SSD1306_FrameBufferPages, &temp_frame_buffer,
+           sizeof(uint8_t) * 1024);
 
     HAL_ADC_Start_DMA(&hadc1, ADC_data, 2);
     continue;
@@ -267,7 +256,7 @@ static void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_8;
   sConfig.Rank = 1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  sConfig.SamplingTime = ADC_SAMPLETIME_15CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -339,9 +328,9 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 83;
+  htim1.Init.Prescaler = 8400;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 65535;
+  htim1.Init.Period = 350;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -455,6 +444,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+  I2C_SSD1306_Update_Whole_Display(SSD1306_FrameBufferPages);
+}
 
 // simple function to be able to place a pixel in a 128x64 grid, from the buffer
 // pages
