@@ -46,6 +46,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     ${CMAKE_SOURCE_DIR}/Core/Src/ssd_1306.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/draw_helpers.c
 )
 
 # Add include paths

@@ -116,7 +116,8 @@
 				2,
 				3,
 				4,
-				6
+				6,
+				7
 			]
 		},
 		{
@@ -217,7 +218,8 @@
 				2,
 				3,
 				4,
-				6
+				6,
+				7
 			]
 		},
 		{
@@ -231,7 +233,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				7,
 				8,
 				9,
 				10,
@@ -251,7 +252,8 @@
 				24,
 				25,
 				26,
-				27
+				27,
+				28
 			]
 		}
 	],
@@ -297,6 +299,12 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/ssd_1306.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/draw_helpers.c",
 			"sourceGroupIndex" : 0
 		},
 		{
