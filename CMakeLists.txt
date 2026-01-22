@@ -48,14 +48,15 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/Core/Src/ssd_1306.cpp
     ${CMAKE_SOURCE_DIR}/Core/Src/draw_helpers.cpp
     ${CMAKE_SOURCE_DIR}/Core/Src/game_object.cpp
-    ${CMAKE_SOURCE_DIR}/Core/Src/game_logic.cpp
     ${CMAKE_SOURCE_DIR}/Core/Src/player_gnorp.cpp
+    ${CMAKE_SOURCE_DIR}/Core/Src/game_logic.cpp
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     ${CMAKE_SOURCE_DIR}/Core/Inc/
+    C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/arm-none-eabi/include/c++/14.3.1
 )
 
 # Add project symbols (macros)
