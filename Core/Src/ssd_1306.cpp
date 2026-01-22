@@ -14,17 +14,21 @@
 
 I2C_HandleTypeDef *hi2c;
 
+extern "C" 
 void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c);
+extern "C" 
 void I2C_SSD1306_Update_Whole_Display(uint8_t SSD1306_FrameBufferPages[128][8]);
+extern "C" 
 void I2C_SSD1306_Screen_Transmit(uint16_t data_len, uint8_t *data);
 
-uint8_t LastBuffer[128][8] = {0};
+uint8_t LastBuffer[128][8] = {{0}};
 
 /**
  * @brief I2C initilisation of a small OLED screen
  * @param None
  * @retval None
  */
+extern "C" 
 void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c1) {
   hi2c = hi2c1;
   // Reference manual for initialisation sequence can be found here, pg 64
@@ -119,6 +123,7 @@ void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c1) {
   I2C_SSD1306_Screen_Transmit((uint16_t)2, data);
 }
 
+extern "C" 
 void I2C_SSD1306_Update_Whole_Display(
     uint8_t SSD1306_FrameBufferPages[128][8]) {
 
@@ -173,6 +178,7 @@ void I2C_SSD1306_Update_Whole_Display(
  * @param data_len number of frames to transmit, data actual data to transmit
  * @retval None
  */
+extern "C" 
 void I2C_SSD1306_Screen_Transmit(uint16_t data_len, uint8_t *data) {
   HAL_I2C_Master_Transmit(hi2c, ((uint16_t)0x3c) << 1, data, data_len, 100);
 }

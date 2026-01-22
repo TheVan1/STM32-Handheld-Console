@@ -3,12 +3,14 @@
 #include "stdlib.h"
 #include <stdint.h>
 
-void put_pixel(uint8_t SSD1306_FrameBufferPages[128][8], uint8_t x, uint8_t y,
+#include <iostream>
+
+void put_pixel(uint8_t SSD1306_FrameBufferPages[128][8], int x, int y,
                uint8_t bit);
 
 // https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
-void draw_line(uint8_t frame[128][8], uint8_t x0, uint8_t y0, uint8_t x1,
-               uint8_t y1) {
+void draw_line(uint8_t frame[128][8], int x0, int y0, int x1,
+               int y1, uint8_t bit) {
   int dx = abs(x1 - x0);
   int sx = x0 < x1 ? 1 : -1;
   int dy = -abs(y1 - y0);
@@ -16,7 +18,7 @@ void draw_line(uint8_t frame[128][8], uint8_t x0, uint8_t y0, uint8_t x1,
   double error = dx + dy;
 
   while (1) {
-    put_pixel(frame, x0, y0, 1);
+    put_pixel(frame, x0, y0, bit);
     double e2 = 2 * error;
     if (e2 >= dy) {
       if (x0 == x1)
@@ -34,11 +36,11 @@ void draw_line(uint8_t frame[128][8], uint8_t x0, uint8_t y0, uint8_t x1,
 }
 
 // https://en.wikipedia.org/wiki/Midpoint_circle_algorithm
-void draw_circle(uint8_t frame[128][8], uint8_t x, uint8_t y, uint8_t radius,
+void draw_circle(uint8_t frame[128][8], int x, int y, int radius,
                  uint8_t bit) {
   double t1 = (double)(radius) / 16;
-  uint8_t current_x = radius;
-  uint8_t current_y = 0;
+  int current_x = radius;
+  int current_y = 0;
   while (current_y < current_x) {
     put_pixel(frame, current_x + x, current_y + y, bit);
     put_pixel(frame, -current_x + x, current_y + y, bit);
@@ -64,28 +66,25 @@ void draw_circle(uint8_t frame[128][8], uint8_t x, uint8_t y, uint8_t radius,
 x1, y1, x2, y2: bounding box vertices
 fill: whether it should be a lineart or solid rectangle
 */
-void draw_rectangle(uint8_t frame[128][8], uint8_t x0, uint8_t y0, uint8_t x1,
-                    uint8_t y1, uint8_t fill) {
-  if (fill == 0) {
-    draw_line(frame, x0, y0, x0, y1);
-    draw_line(frame, x0, y1, x1, y0);
-    draw_line(frame, x1, y0, x1, y1);
-    draw_line(frame, x0, y1, x1, y1);
-  }
+void draw_rectangle(uint8_t frame[128][8], int x0, int y0, int x1,
+                    int y1, uint8_t bit) {
+
+  draw_line(frame, x0, y0, x0, y1, bit);
+  draw_line(frame, x0, y1, x1, y0, bit);
+  draw_line(frame, x1, y0, x1, y1, bit);
+  draw_line(frame, x0, y1, x1, y1, bit);
 }
 
-void draw_quadrilateral(uint8_t frame[128][8], uint8_t x0, uint8_t y0,
-                        uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2,
-                        uint8_t x3, uint8_t y3, uint8_t fill) {
-  if (fill == 0) {
-    draw_line(frame, x0, y0, x1, y1);
-    draw_line(frame, x0, y0, x2, y2);
-    draw_line(frame, x1, y1, x3, y3);
-    draw_line(frame, x2, y2, x3, y3);
-  }
+void draw_quadrilateral(uint8_t frame[128][8], int x0, int y0,
+                        int x1, int y1, uint8_t x2, int y2,
+                        int x3, int y3, uint8_t bit) {
+  draw_line(frame, x0, y0, x1, y1, bit);
+  draw_line(frame, x0, y0, x2, y2, bit);
+  draw_line(frame, x1, y1, x3, y3, bit);
+  draw_line(frame, x2, y2, x3, y3, bit);
 }
 
-void draw_gnorp(uint8_t frame[128][8], uint8_t x, uint8_t y, uint8_t bit) {
+void draw_gnorp(uint8_t frame[128][8], int x, int y, uint8_t bit) {
   put_pixel(frame, x + 2, y, bit);
   put_pixel(frame, x + 4, y, bit);
 
@@ -112,16 +111,27 @@ void draw_gnorp(uint8_t frame[128][8], uint8_t x, uint8_t y, uint8_t bit) {
   put_pixel(frame, x + 4, y + 6, bit);
 }
 
+void draw_sprite(uint8_t SSD1306_FrameBufferPages[128][8], int x, int y,
+                 uint8_t *pixels[2], uint8_t length) {
+
+  // iterate over our vector of pixels and place them in the correct place,
+  // offset by our position
+  for (int i = 0; i < length; i++) {
+    put_pixel(SSD1306_FrameBufferPages, pixels[i][0] + x, pixels[i][0] + y, 1);
+  }
+}
+
 // simple function to be able to place a pixel in a 128x64 grid, from the buffer
 // pages
-void put_pixel(uint8_t SSD1306_FrameBufferPages[128][8], uint8_t x, uint8_t y,
+void put_pixel(uint8_t SSD1306_FrameBufferPages[128][8], int x, int y,
                uint8_t bit) {
-  uint8_t page = y / 8;
-
   // early return if we would write outside of our bounds
-  if (page > 7 || x > 127)
+  if (y > 63 || x > 127 || x < 0 || y < 0)
     return;
+  uint8_t page = y / 8;
 
   // bit shift our currently placed bit into the correct spot in the page
   SSD1306_FrameBufferPages[x][page] |= bit << (y - (page * 8));
 }
+
+void draw_text(uint8_t frame[128][8], uint8_t x, uint8_t y, char *text) {}
