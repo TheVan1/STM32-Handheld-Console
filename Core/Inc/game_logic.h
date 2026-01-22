@@ -1,13 +1,15 @@
+
 #ifndef INC_GAME_LOGIC
 #define INC_GAME_LOGIC
 
-#include <cstdint>
 
 #ifndef GAME_LOGIC_H
 #define GAME_LOGIC_H
 
 #pragma once
 #ifdef __cplusplus
+
+#include <cstdint>
 extern "C" {
 #endif
 

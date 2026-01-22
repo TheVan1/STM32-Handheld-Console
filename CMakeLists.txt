@@ -56,7 +56,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     ${CMAKE_SOURCE_DIR}/Core/Inc/
-    C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/arm-none-eabi/include/c++/14.3.1
+    # C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/arm-none-eabi/include/c++/14.3.1
 )
 
 # Add project symbols (macros)

@@ -33,7 +33,7 @@ extern "C" void frame_start(uint8_t frame[128][8], uint8_t player_input_x,
       (((double)player_input_x / 255) - 0.5) * delta_time * 40;
 
   for (GameObject *obj : objects) {
-    obj->Update();
+    // obj->Update();
 
     if ((obj->flags & FLAG_GRAVITY_ENABLED) != 0) {
       obj->velocity_y -= 300 * delta_time;

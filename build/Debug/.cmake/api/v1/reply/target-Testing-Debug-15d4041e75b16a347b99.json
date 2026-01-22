@@ -91,10 +91,6 @@
 					"path" : "C:/Users/Vanessa/Desktop/ST-Handheld/Core/Inc"
 				},
 				{
-					"backtrace" : 4,
-					"path" : "C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/arm-none-eabi/include/c++/14.3.1"
-				},
-				{
 					"backtrace" : 3,
 					"path" : "C:/Users/Vanessa/Desktop/ST-Handheld/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -160,10 +156,6 @@
 				{
 					"backtrace" : 4,
 					"path" : "C:/Users/Vanessa/Desktop/ST-Handheld/Core/Inc"
-				},
-				{
-					"backtrace" : 4,
-					"path" : "C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/arm-none-eabi/include/c++/14.3.1"
 				},
 				{
 					"backtrace" : 3,
