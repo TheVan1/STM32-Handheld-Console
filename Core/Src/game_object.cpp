@@ -38,19 +38,17 @@ GameObject::GameObject(uint8_t flags, std::vector<uint8_t> sprite) {
 
   she's a little ugly, but she gets the job done
   */
-  for (uint8_t i = 0; i < sprite.size(); i++) {
-    if (i % 2 == 0) {
-      this->pixels[0][i] = sprite[i];
+  for (uint8_t i = 0; i < sprite.size(); i += 2) {
+    this->pixels[0][i/2] = sprite[i];
 
-      if (sprite[i] > hitbox[0]) {
-        hitbox[0] = sprite[i];
-      }
-    } else {
-      this->pixels[1][i] = sprite[i];
+    if (sprite[i] > hitbox[0]) {
+      hitbox[0] = sprite[i];
+    }
 
-      if (sprite[i] > hitbox[1]) {
-        hitbox[1] = sprite[i];
-      }
+    this->pixels[1][i/2] = sprite[i + 1];
+
+    if (sprite[i + 1] > hitbox[1]) {
+      hitbox[1] = sprite[i+1];
     }
   }
 

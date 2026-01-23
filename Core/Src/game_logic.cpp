@@ -29,17 +29,18 @@ extern "C" void game_init() {
 extern "C" void frame_start(uint8_t frame[128][8], uint8_t player_input_x,
                             uint8_t player_input_y, double delta_time) {
 
-  gnorping_it->velocity_x +=
-      (((double)player_input_x / 255) - 0.5) * delta_time * 40;
+  // gnorping_it->velocity_x +=
+  //     (((double)player_input_x / 255) - 0.5) * delta_time * 40;
 
-  for (GameObject *obj : objects) {
+   for (GameObject *obj : objects) {
+
     // obj->Update();
 
     if ((obj->flags & FLAG_GRAVITY_ENABLED) != 0) {
       obj->velocity_y -= 300 * delta_time;
     }
 
-    // TODO: check for collissions
+    // TODO: check for collisions
 
     if (obj->flags & FLAG_GRAVITY_ENABLED && obj->y <= 0 &&
         obj->velocity_y <= 0) {
@@ -51,6 +52,7 @@ extern "C" void frame_start(uint8_t frame[128][8], uint8_t player_input_x,
     obj->y += obj->velocity_y * delta_time;
 
     // Drawing stuff goes here
+    draw_sprite(frame, obj->x, obj->y, obj->pixels, obj->pixel_count);
   }
 }
 

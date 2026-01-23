@@ -117,7 +117,7 @@ void draw_sprite(uint8_t SSD1306_FrameBufferPages[128][8], int x, int y,
   // iterate over our vector of pixels and place them in the correct place,
   // offset by our position
   for (int i = 0; i < length; i++) {
-    put_pixel(SSD1306_FrameBufferPages, pixels[i][0] + x, pixels[i][0] + y, 1);
+    put_pixel(SSD1306_FrameBufferPages, pixels[0][i] + x, pixels[1][i] + y, 1);
   }
 }
 
