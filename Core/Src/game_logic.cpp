@@ -23,13 +23,13 @@ extern "C" void game_init() {
                                        1, 0, 2, 0, 3, 0, 4, 3, 4, 5, 4,
                                        0, 5, 1, 6, 2, 6, 3, 6, 4, 6};
 
-  PlayerGnorp gnorping_it =
-      *new PlayerGnorp(FLAG_DYNAMIC_OBJECT | FLAG_GRAVITY_ENABLED, gnorp_pixels);
+  PlayerGnorp *gnorping_it =
+      new PlayerGnorp(FLAG_DYNAMIC_OBJECT | FLAG_GRAVITY_ENABLED, gnorp_pixels);
 
-  gnorping_it.velocity_x = 0;
-  gnorping_it.velocity_y = 0;
+  gnorping_it->velocity_x = 0;
+  gnorping_it->velocity_y = 0;
 
-  objects.push_back(&gnorping_it);
+  objects.push_back(gnorping_it);
 }
 
 extern "C" void frame_start(uint8_t frame[128][8], uint8_t player_input_x,
