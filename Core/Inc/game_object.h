@@ -34,7 +34,7 @@ public:
 
   GameObject(uint8_t flags, std::vector<uint8_t> pixels);
 
-  void Update();
+  virtual void Update(){}
 };
 
 

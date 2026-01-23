@@ -1,4 +1,8 @@
 #include "game_logic.h"
-void Update(){
-    get_inputs(0);
+#include "main.h"
+#include "player_gnorp.h"
+
+void PlayerGnorp::Update(){
+    return;
+    
 }

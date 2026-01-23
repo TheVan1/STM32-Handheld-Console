@@ -1,6 +1,7 @@
 #include "game_logic.h"
 #include "draw_helpers.h"
 #include "game_object.h"
+#include "player_gnorp.h"
 #include "main.h"
 #include "stdio.h"
 #include "stdlib.h"
@@ -8,29 +9,31 @@
 #include <stdint.h>
 #include <vector>
 
-GameObject *gnorping_it;
-std::vector<GameObject *> objects;
+
 
 uint8_t player_input_x;
 uint8_t player_input_y;
 
+
+GameObject *gnorping_it;
+std::vector<GameObject*> objects;
 extern "C" void game_init() {
 
   std::vector<uint8_t> gnorp_pixels = {2, 0, 4, 0, 1, 1, 2, 1, 3, 1, 4,
                                        1, 0, 2, 0, 3, 0, 4, 3, 4, 5, 4,
                                        0, 5, 1, 6, 2, 6, 3, 6, 4, 6};
 
-  gnorping_it =
-      new GameObject(FLAG_DYNAMIC_OBJECT | FLAG_GRAVITY_ENABLED, gnorp_pixels);
+  PlayerGnorp gnorping_it =
+      *new PlayerGnorp(FLAG_DYNAMIC_OBJECT | FLAG_GRAVITY_ENABLED, gnorp_pixels);
 
-  objects.push_back(gnorping_it);
+  gnorping_it.velocity_x = 0;
+  gnorping_it.velocity_y = 0;
+
+  objects.push_back(&gnorping_it);
 }
 
 extern "C" void frame_start(uint8_t frame[128][8], uint8_t player_input_x,
                             uint8_t player_input_y, double delta_time) {
-
-  // gnorping_it->velocity_x +=
-  //     (((double)player_input_x / 255) - 0.5) * delta_time * 40;
 
    for (GameObject *obj : objects) {
 
