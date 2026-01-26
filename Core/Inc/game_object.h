@@ -1,6 +1,7 @@
 #ifndef INC_GAME_OBJECT
 #define INC_GAME_OBJECT
 
+#include "game_manager.h"
 #include <stdint.h>
 #include <string.h>
 #include <vector>
@@ -33,6 +34,8 @@ public:
 
 
   GameObject(uint8_t flags, std::vector<uint8_t> pixels);
+
+  GameManager* manager;
 
   virtual void Update(){}
 };

@@ -1,5 +1,5 @@
-#ifndef INC_PLAYER_GNORP
-#define INC_PLAYER_GNORP
+#ifndef INC_PLAYER_GNORP_H
+#define INC_PLAYER_GNORP_H
 
 #include <game_object.h>
 #include <cstdint>

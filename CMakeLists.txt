@@ -50,6 +50,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/Core/Src/game_object.cpp
     ${CMAKE_SOURCE_DIR}/Core/Src/player_gnorp.cpp
     ${CMAKE_SOURCE_DIR}/Core/Src/game_logic.cpp
+    ${CMAKE_SOURCE_DIR}/Core/Src/game_manager.cpp
 )
 
 # Add include paths

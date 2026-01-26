@@ -7,21 +7,20 @@
 
 // INFO: all SSD1306 functions rely on a 128x8,
 // uint8 array. in this array, each individual *bit* is a single pixel
-
-#include "main.h"
 #include <stdint.h>
 #include <string.h>
+#include <array>
+#include "main.h"
+#include "stm32f4xx_hal.h"
 
 I2C_HandleTypeDef *hi2c;
 
 extern "C" 
 void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c);
-extern "C" 
-void I2C_SSD1306_Update_Whole_Display(uint8_t SSD1306_FrameBufferPages[128][8]);
+void I2C_SSD1306_Update_Whole_Display(std::array<std::array<uint8_t, 8>, 128> frame);
 extern "C" 
 void I2C_SSD1306_Screen_Transmit(uint16_t data_len, uint8_t *data);
 
-uint8_t LastBuffer[128][8] = {{0}};
 
 /**
  * @brief I2C initilisation of a small OLED screen
@@ -123,9 +122,8 @@ void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c1) {
   I2C_SSD1306_Screen_Transmit((uint16_t)2, data);
 }
 
-extern "C" 
 void I2C_SSD1306_Update_Whole_Display(
-    uint8_t SSD1306_FrameBufferPages[128][8]) {
+    std::array<std::array<uint8_t, 8>, 128> frame) {
 
   // Set the columns and pages to be written to
 
@@ -157,7 +155,7 @@ void I2C_SSD1306_Update_Whole_Display(
     for (volatile uint8_t y = 0; y < 8; y++) {
       // retrieve the current page from the 2d array, and write that into the 1d
       // array for transmission
-      uint8_t current_page = SSD1306_FrameBufferPages[x][y];
+      uint8_t current_page = frame[x][y];
 
       // (7*128) + 128 + 1 = 1025
       // we skip the first byte as that is 0x40, to declare data transmission
@@ -168,7 +166,6 @@ void I2C_SSD1306_Update_Whole_Display(
   I2C_SSD1306_Screen_Transmit((uint16_t)12, command_data);
   I2C_SSD1306_Screen_Transmit((uint16_t)1025, data);
 
-  memcpy(LastBuffer, SSD1306_FrameBufferPages, 1024);
 
   return;
 }

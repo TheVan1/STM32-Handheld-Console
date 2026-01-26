@@ -1,75 +1,89 @@
 #include "game_logic.h"
 #include "draw_helpers.h"
+#include "game_manager.h"
 #include "game_object.h"
-#include "player_gnorp.h"
 #include "main.h"
+#include "player_gnorp.h"
+#include "ssd_1306.h"
+
 #include "stdio.h"
 #include "stdlib.h"
+#include "stm32f4xx_hal.h"
+#include <algorithm>
+#include <array>
 #include <cstddef>
+#include <cstring>
 #include <stdint.h>
 #include <vector>
 
+#define DISPLAY_X_SIZE 128
+#define DISPLAY_Y_SIZE 64
 
 
-uint8_t player_input_x;
-uint8_t player_input_y;
+std::vector<GameObject*> objects; 
+std::array<std::array<uint8_t, 8>, 128> frame;
+
+extern "C" void game_init( TIM_HandleTypeDef *timer, ADC_HandleTypeDef *adc) {
 
 
-GameObject *gnorping_it;
-std::vector<GameObject*> objects;
-extern "C" void game_init() {
+  uint32_t adc_data[2] = {0};
+  HAL_ADC_Start_DMA(adc, adc_data, 2);
+
+  GameManager* manager = new GameManager();
 
   std::vector<uint8_t> gnorp_pixels = {2, 0, 4, 0, 1, 1, 2, 1, 3, 1, 4,
                                        1, 0, 2, 0, 3, 0, 4, 3, 4, 5, 4,
                                        0, 5, 1, 6, 2, 6, 3, 6, 4, 6};
+  PlayerGnorp* player = new PlayerGnorp(FLAG_DYNAMIC_OBJECT | FLAG_GRAVITY_ENABLED, gnorp_pixels);
+  player->x = 64;
+  player->y = 32;
+  objects.push_back(player);
+  manager->frame_buffer = frame;
 
-  PlayerGnorp *gnorping_it =
-      new PlayerGnorp(FLAG_DYNAMIC_OBJECT | FLAG_GRAVITY_ENABLED, gnorp_pixels);
+  while (1) {
+    /*------------Frame Preparation------------*/
+    HAL_TIM_Base_Stop(timer);
 
-  gnorping_it->velocity_x = 0;
-  gnorping_it->velocity_y = 0;
+    // the time the last frame took to run, in seconds
+    double delta_time = (double)(TIM3->CNT) / 1000000;
+    TIM3->CNT = 0;
 
-  objects.push_back(gnorping_it);
-}
+    HAL_TIM_Base_Start(timer);
 
-extern "C" void frame_start(uint8_t frame[128][8], uint8_t player_input_x,
-                            uint8_t player_input_y, double delta_time) {
+    // wipe the frame buffer at the start of each frame
+    memset(&manager->frame_buffer, 0, sizeof(uint8_t) * 1024);
 
-   for (GameObject *obj : objects) {
+    /*--------Frame Drawing and Tick Logic--------*/
+    for(GameObject* object: objects){
+      object->Update();
 
-    // obj->Update();
-
-    if ((obj->flags & FLAG_GRAVITY_ENABLED) != 0) {
-      obj->velocity_y -= 300 * delta_time;
+      draw_sprite(&manager->frame_buffer, object->x, object->y, object->pixels, object->pixel_count);
     }
 
-    // TODO: check for collisions
 
-    if (obj->flags & FLAG_GRAVITY_ENABLED && obj->y <= 0 &&
-        obj->velocity_y <= 0) {
-      obj->velocity_y = 0;
-      obj->y = 0;
-    }
 
-    obj->x += obj->velocity_x * delta_time;
-    obj->y += obj->velocity_y * delta_time;
+    /*-------------Frame Finalisation-------------*/
 
-    // Drawing stuff goes here
-    draw_sprite(frame, obj->x, obj->y, obj->pixels, obj->pixel_count);
+    /*
+    after our temporary frame is created, we need to copy our temp buffer to the
+    frame buffer used by the HAL_TIM_PeriodElapsedCallback IRQn
+
+    this is *technically* not fully interrupt safe, as we could theoretically have
+    the interrupt fire during this memcpy, **however**, this is simulaneouly
+    unlikely and low-stakes as memcpy takes very little time, and if the IQRn
+    does fire, we still show a valid frame which is partways updated
+
+    without this fix, we get flickery behaviour, and with it I have noticed no
+    artifacts or issues
+    */
+
+
+    std::copy(manager->frame_buffer.begin(), manager->frame_buffer.end(), frame.begin());
+
   }
 }
 
-void destroy_object(GameObject *object) {
-  for (uint16_t i = 0; i < objects.size(); i++) {
-    if (objects[i] == object) {
-      // objects[i]->FreeMemory();
-      objects.erase(objects.begin() + i);
-    }
-  }
-}
-
-uint8_t get_inputs(uint8_t axis){
-  if(axis == 0) return player_input_x;
-  if(axis == 1) return player_input_y;
-  return 0;
+extern "C" 
+void frame_update(){
+  I2C_SSD1306_Update_Whole_Display(frame);
 }
