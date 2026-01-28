@@ -3,19 +3,19 @@
 #define INC_GAME_LOGIC
 
 #include "main.h"
+#ifdef __cplusplus
+#include <cstdint>
+#endif
 
 #ifndef GAME_LOGIC_H
 #define GAME_LOGIC_H
 
-#pragma once
 #ifdef __cplusplus
-#
-#include <cstdint>
 extern "C" {
 #endif
 
-void game_init(TIM_HandleTypeDef* timer, ADC_HandleTypeDef *adc);
- void frame_update();
+    void game_init(TIM_HandleTypeDef* timer, ADC_HandleTypeDef *adc);
+    void frame_update();
 
 #ifdef __cplusplus
 }
