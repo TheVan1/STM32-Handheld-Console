@@ -5347,7 +5347,7 @@ LOAD C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1
                 0x08000000                g_pfnVectors
                 0x08000194                        . = ALIGN (0x4)
 
-.text           0x08000198     0x6f18
+.text           0x08000198     0x6f70
                 0x08000198                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000198       0x40 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -5793,525 +5793,526 @@ LOAD C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1
                 0x080055c2                std::vector<GameObject*, std::allocator<GameObject*> >::vector()
  *fill*         0x080055dc        0x4 
  .text.game_init
-                0x080055e0      0x420 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080055e0      0x470 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
                 0x080055e0                game_init
  .text.frame_update
-                0x08005a00       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005a00                frame_update
+                0x08005a50       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005a50                frame_update
  .text._ZNSt6vectorIhSaIhEEC2ERKS1_
-                0x08005a30       0x8a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005a30                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::vector<unsigned char, std::allocator<unsigned char> > const&)
-                0x08005a30                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::vector<unsigned char, std::allocator<unsigned char> > const&)
+                0x08005a80       0x8a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005a80                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::vector<unsigned char, std::allocator<unsigned char> > const&)
+                0x08005a80                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::vector<unsigned char, std::allocator<unsigned char> > const&)
  .text._ZNSt6vectorIhSaIhEED2Ev
-                0x08005aba       0x3c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005aba                std::vector<unsigned char, std::allocator<unsigned char> >::~vector()
-                0x08005aba                std::vector<unsigned char, std::allocator<unsigned char> >::~vector()
+                0x08005b0a       0x3c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005b0a                std::vector<unsigned char, std::allocator<unsigned char> >::~vector()
+                0x08005b0a                std::vector<unsigned char, std::allocator<unsigned char> >::~vector()
  .text._ZNSt12_Vector_baseIP10GameObjectSaIS1_EE12_Vector_implC2Ev
-                0x08005af6       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005af6                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl::_Vector_impl()
-                0x08005af6                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl::_Vector_impl()
+                0x08005b46       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005b46                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl::_Vector_impl()
+                0x08005b46                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl::_Vector_impl()
  .text._ZNSt12_Vector_baseIP10GameObjectSaIS1_EED2Ev
-                0x08005b18       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005b18                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::~_Vector_base()
-                0x08005b18                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::~_Vector_base()
+                0x08005b68       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005b68                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::~_Vector_base()
+                0x08005b68                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::~_Vector_base()
  .text._ZNSt6vectorIhSaIhEEC2ESt16initializer_listIhERKS0_
-                0x08005b4a       0x4c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005b4a                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::initializer_list<unsigned char>, std::allocator<unsigned char> const&)
-                0x08005b4a                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::initializer_list<unsigned char>, std::allocator<unsigned char> const&)
+                0x08005b9a       0x4c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005b9a                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::initializer_list<unsigned char>, std::allocator<unsigned char> const&)
+                0x08005b9a                std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::initializer_list<unsigned char>, std::allocator<unsigned char> const&)
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE9push_backEOS1_
-                0x08005b96       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005b96                std::vector<GameObject*, std::allocator<GameObject*> >::push_back(GameObject*&&)
+                0x08005be6       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005be6                std::vector<GameObject*, std::allocator<GameObject*> >::push_back(GameObject*&&)
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE5beginEv
-                0x08005bb8       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005bb8                std::vector<GameObject*, std::allocator<GameObject*> >::begin()
+                0x08005c08       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005c08                std::vector<GameObject*, std::allocator<GameObject*> >::begin()
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE3endEv
-                0x08005bd8       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005bd8                std::vector<GameObject*, std::allocator<GameObject*> >::end()
+                0x08005c28       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005c28                std::vector<GameObject*, std::allocator<GameObject*> >::end()
  .text._ZN9__gnu_cxxneIPP10GameObjectSt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESC_
-                0x08005bfa       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005bfa                bool __gnu_cxx::operator!=<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >(__gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&, __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&)
+                0x08005c4a       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005c4a                bool __gnu_cxx::operator!=<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >(__gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&, __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&)
  .text._ZN9__gnu_cxx17__normal_iteratorIPP10GameObjectSt6vectorIS2_SaIS2_EEEppEv
-                0x08005c2a       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005c2a                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::operator++()
+                0x08005c7a       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005c7a                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::operator++()
  .text._ZNK9__gnu_cxx17__normal_iteratorIPP10GameObjectSt6vectorIS2_SaIS2_EEEdeEv
-                0x08005c4a       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005c4a                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::operator*() const
+                0x08005c9a       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005c9a                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::operator*() const
  .text._ZNSt5arrayIS_IhLj8EELj128EE5beginEv
-                0x08005c62       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005c62                std::array<std::array<unsigned char, 8u>, 128u>::begin()
+                0x08005cb2       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005cb2                std::array<std::array<unsigned char, 8u>, 128u>::begin()
  .text._ZNSt5arrayIS_IhLj8EELj128EE3endEv
-                0x08005c7c       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005c7c                std::array<std::array<unsigned char, 8u>, 128u>::end()
+                0x08005ccc       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005ccc                std::array<std::array<unsigned char, 8u>, 128u>::end()
  .text._ZSt4copyIPSt5arrayIhLj8EES2_ET0_T_S4_S3_
-                0x08005c9a       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005c9a                std::array<unsigned char, 8u>* std::copy<std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
+                0x08005cea       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005cea                std::array<unsigned char, 8u>* std::copy<std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
  .text._ZNKSt12_Vector_baseIhSaIhEE19_M_get_Tp_allocatorEv
-                0x08005cca       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005cca                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_get_Tp_allocator() const
+                0x08005d1a       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005d1a                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_get_Tp_allocator() const
  .text._ZNSt12_Vector_baseIhSaIhEE12_Vector_implD2Ev
-                0x08005ce0       0x1c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005ce0                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::~_Vector_impl()
-                0x08005ce0                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::~_Vector_impl()
+                0x08005d30       0x1c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005d30                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::~_Vector_impl()
+                0x08005d30                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::~_Vector_impl()
  .text._ZNSt12_Vector_baseIhSaIhEEC2EjRKS0_
-                0x08005cfc       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005cfc                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned int, std::allocator<unsigned char> const&)
-                0x08005cfc                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned int, std::allocator<unsigned char> const&)
+                0x08005d4c       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005d4c                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned int, std::allocator<unsigned char> const&)
+                0x08005d4c                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned int, std::allocator<unsigned char> const&)
  .text._ZNSt12_Vector_baseIhSaIhEED2Ev
-                0x08005d24       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005d24                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::~_Vector_base()
-                0x08005d24                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::~_Vector_base()
+                0x08005d74       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005d74                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::~_Vector_base()
+                0x08005d74                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::~_Vector_base()
  .text._ZNKSt6vectorIhSaIhEE5beginEv
-                0x08005d54       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005d54                std::vector<unsigned char, std::allocator<unsigned char> >::begin() const
+                0x08005da4       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005da4                std::vector<unsigned char, std::allocator<unsigned char> >::begin() const
  .text._ZNKSt6vectorIhSaIhEE3endEv
-                0x08005d74       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005d74                std::vector<unsigned char, std::allocator<unsigned char> >::end() const
+                0x08005dc4       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005dc4                std::vector<unsigned char, std::allocator<unsigned char> >::end() const
  .text._ZNSt12_Vector_baseIhSaIhEE19_M_get_Tp_allocatorEv
-                0x08005d96       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005d96                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_get_Tp_allocator()
+                0x08005de6       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005de6                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_get_Tp_allocator()
  .text._ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEPhhET0_T_SA_S9_RSaIT1_E
-                0x08005dac       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005dac                unsigned char* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*, unsigned char>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*, std::allocator<unsigned char>&)
+                0x08005dfc       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005dfc                unsigned char* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*, unsigned char>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*, std::allocator<unsigned char>&)
  .text._ZNSt12_Vector_baseIP10GameObjectSaIS1_EE17_Vector_impl_dataC2Ev
-                0x08005dce       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005dce                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl_data::_Vector_impl_data()
-                0x08005dce                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl_data::_Vector_impl_data()
+                0x08005e1e       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005e1e                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl_data::_Vector_impl_data()
+                0x08005e1e                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_Vector_impl_data::_Vector_impl_data()
  .text._ZNSt15__new_allocatorIP10GameObjectED2Ev
-                0x08005df6       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005df6                std::__new_allocator<GameObject*>::~__new_allocator()
-                0x08005df6                std::__new_allocator<GameObject*>::~__new_allocator()
+                0x08005e46       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005e46                std::__new_allocator<GameObject*>::~__new_allocator()
+                0x08005e46                std::__new_allocator<GameObject*>::~__new_allocator()
  .text._ZNSt12_Vector_baseIP10GameObjectSaIS1_EE13_M_deallocateEPS1_j
-                0x08005e0c       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005e0c                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_deallocate(GameObject**, unsigned int)
+                0x08005e5c       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005e5c                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_deallocate(GameObject**, unsigned int)
  .text._ZNSt15__new_allocatorIhED2Ev
-                0x08005e3e       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005e3e                std::__new_allocator<unsigned char>::~__new_allocator()
-                0x08005e3e                std::__new_allocator<unsigned char>::~__new_allocator()
+                0x08005e8e       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005e8e                std::__new_allocator<unsigned char>::~__new_allocator()
+                0x08005e8e                std::__new_allocator<unsigned char>::~__new_allocator()
  .text._ZNSt12_Vector_baseIhSaIhEEC2ERKS0_
-                0x08005e54       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005e54                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(std::allocator<unsigned char> const&)
-                0x08005e54                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(std::allocator<unsigned char> const&)
+                0x08005ea4       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005ea4                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(std::allocator<unsigned char> const&)
+                0x08005ea4                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(std::allocator<unsigned char> const&)
  .text._ZNKSt16initializer_listIhE5beginEv
-                0x08005e72       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005e72                std::initializer_list<unsigned char>::begin() const
+                0x08005ec2       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005ec2                std::initializer_list<unsigned char>::begin() const
  .text._ZNKSt16initializer_listIhE3endEv
-                0x08005e8a       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005e8a                std::initializer_list<unsigned char>::end() const
+                0x08005eda       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005eda                std::initializer_list<unsigned char>::end() const
  .text._ZNKSt16initializer_listIhE4sizeEv
-                0x08005eac       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005eac                std::initializer_list<unsigned char>::size() const
+                0x08005efc       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005efc                std::initializer_list<unsigned char>::size() const
  .text._ZNSt6vectorIhSaIhEE21_M_range_initialize_nIPKhEEvT_S5_j
-                0x08005ec4       0x72 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005ec4                void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_initialize_n<unsigned char const*>(unsigned char const*, unsigned char const*, unsigned int)
+                0x08005f14       0x72 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005f14                void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_initialize_n<unsigned char const*>(unsigned char const*, unsigned char const*, unsigned int)
  .text._ZSt4moveIRP10GameObjectEONSt16remove_referenceIT_E4typeEOS4_
-                0x08005f36       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005f36                std::remove_reference<GameObject*&>::type&& std::move<GameObject*&>(GameObject*&)
+                0x08005f86       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005f86                std::remove_reference<GameObject*&>::type&& std::move<GameObject*&>(GameObject*&)
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE12emplace_backIJS1_EEERS1_DpOT_
-                0x08005f4c       0x84 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005f4c                GameObject*& std::vector<GameObject*, std::allocator<GameObject*> >::emplace_back<GameObject*>(GameObject*&&)
+                0x08005f9c       0x84 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08005f9c                GameObject*& std::vector<GameObject*, std::allocator<GameObject*> >::emplace_back<GameObject*>(GameObject*&&)
  .text._ZN9__gnu_cxx17__normal_iteratorIPP10GameObjectSt6vectorIS2_SaIS2_EEEC2ERKS3_
-                0x08005fd0       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005fd0                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::__normal_iterator(GameObject** const&)
-                0x08005fd0                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::__normal_iterator(GameObject** const&)
+                0x08006020       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006020                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::__normal_iterator(GameObject** const&)
+                0x08006020                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::__normal_iterator(GameObject** const&)
  .text._ZNK9__gnu_cxx17__normal_iteratorIPP10GameObjectSt6vectorIS2_SaIS2_EEE4baseEv
-                0x08005ff0       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08005ff0                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::base() const
+                0x08006040       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006040                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::base() const
  .text._ZSt12__miter_baseIPSt5arrayIhLj8EEET_S3_
-                0x08006006       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006006                std::array<unsigned char, 8u>* std::__miter_base<std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*)
+                0x08006056       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006056                std::array<unsigned char, 8u>* std::__miter_base<std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*)
  .text._ZSt13__copy_move_aILb0EPSt5arrayIhLj8EES2_ET1_T0_S4_S3_
-                0x0800601c       0x46 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800601c                std::array<unsigned char, 8u>* std::__copy_move_a<false, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
+                0x0800606c       0x46 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800606c                std::array<unsigned char, 8u>* std::__copy_move_a<false, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
  .text._ZNSt12_Vector_baseIhSaIhEE12_Vector_implC2ERKS0_
-                0x08006062       0x2c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006062                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::_Vector_impl(std::allocator<unsigned char> const&)
-                0x08006062                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::_Vector_impl(std::allocator<unsigned char> const&)
+                0x080060b2       0x2c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080060b2                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::_Vector_impl(std::allocator<unsigned char> const&)
+                0x080060b2                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl::_Vector_impl(std::allocator<unsigned char> const&)
  .text._ZNSt12_Vector_baseIhSaIhEE17_M_create_storageEj
-                0x0800608e       0x34 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800608e                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_create_storage(unsigned int)
+                0x080060de       0x34 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080060de                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_create_storage(unsigned int)
  .text._ZNSt12_Vector_baseIhSaIhEE13_M_deallocateEPhj
-                0x080060c2       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080060c2                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_deallocate(unsigned char*, unsigned int)
+                0x08006112       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006112                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_deallocate(unsigned char*, unsigned int)
  .text._ZN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEC2ERKS2_
-                0x080060f4       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080060f4                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >::__normal_iterator(unsigned char const* const&)
-                0x080060f4                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >::__normal_iterator(unsigned char const* const&)
+                0x08006144       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006144                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >::__normal_iterator(unsigned char const* const&)
+                0x08006144                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >::__normal_iterator(unsigned char const* const&)
  .text._ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEPhET0_T_SA_S9_
-                0x08006114       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006114                unsigned char* std::uninitialized_copy<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
+                0x08006164       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006164                unsigned char* std::uninitialized_copy<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
  .text._ZSt8_DestroyIPhEvT_S1_
-                0x0800613c       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800613c                void std::_Destroy<unsigned char*>(unsigned char*, unsigned char*)
- *fill*         0x08006156        0x2 
+                0x0800618c       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800618c                void std::_Destroy<unsigned char*>(unsigned char*, unsigned char*)
+ *fill*         0x080061a6        0x2 
  .text._ZNSt6vectorIhSaIhEE17_S_check_init_lenEjRKS0_
-                0x08006158       0x54 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006158                std::vector<unsigned char, std::allocator<unsigned char> >::_S_check_init_len(unsigned int, std::allocator<unsigned char> const&)
+                0x080061a8       0x54 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080061a8                std::vector<unsigned char, std::allocator<unsigned char> >::_S_check_init_len(unsigned int, std::allocator<unsigned char> const&)
  .text._ZNSt12_Vector_baseIhSaIhEE11_M_allocateEj
-                0x080061ac       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080061ac                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_allocate(unsigned int)
+                0x080061fc       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080061fc                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_allocate(unsigned int)
  .text._ZSt4moveIRPKhEONSt16remove_referenceIT_E4typeEOS4_
-                0x080061de       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080061de                std::remove_reference<unsigned char const*&>::type&& std::move<unsigned char const*&>(unsigned char const*&)
+                0x0800622e       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800622e                std::remove_reference<unsigned char const*&>::type&& std::move<unsigned char const*&>(unsigned char const*&)
  .text._ZSt22__uninitialized_copy_aIPKhPhhET0_T_S4_S3_RSaIT1_E
-                0x080061f4       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080061f4                unsigned char* std::__uninitialized_copy_a<unsigned char const*, unsigned char*, unsigned char>(unsigned char const*, unsigned char const*, unsigned char*, std::allocator<unsigned char>&)
+                0x08006244       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006244                unsigned char* std::__uninitialized_copy_a<unsigned char const*, unsigned char*, unsigned char>(unsigned char const*, unsigned char const*, unsigned char*, std::allocator<unsigned char>&)
  .text._ZSt7forwardIP10GameObjectEOT_RNSt16remove_referenceIS2_E4typeE
-                0x08006216       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006216                GameObject*&& std::forward<GameObject*>(std::remove_reference<GameObject*>::type&)
+                0x08006266       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006266                GameObject*&& std::forward<GameObject*>(std::remove_reference<GameObject*>::type&)
  .text._ZZNSt6vectorIP10GameObjectSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_EN6_GuardC2EPS1_jRS2_
-                0x0800622c       0x2e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800622c                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::_Guard(GameObject**, unsigned int, std::allocator<GameObject*>&)
-                0x0800622c                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::_Guard(GameObject**, unsigned int, std::allocator<GameObject*>&)
+                0x0800627c       0x2e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800627c                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::_Guard(GameObject**, unsigned int, std::allocator<GameObject*>&)
+                0x0800627c                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::_Guard(GameObject**, unsigned int, std::allocator<GameObject*>&)
  .text._ZZNSt6vectorIP10GameObjectSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_EN6_GuardD2Ev
-                0x0800625a       0x38 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800625a                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::~_Guard()
-                0x0800625a                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::~_Guard()
- *fill*         0x08006292        0x2 
+                0x080062aa       0x38 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080062aa                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::~_Guard()
+                0x080062aa                std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)::_Guard::~_Guard()
+ *fill*         0x080062e2        0x2 
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_
-                0x08006294      0x114 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006294                void std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)
+                0x080062e4      0x114 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080062e4                void std::vector<GameObject*, std::allocator<GameObject*> >::_M_realloc_append<GameObject*>(GameObject*&&)
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE4backEv
-                0x080063a8       0x36 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080063a8                std::vector<GameObject*, std::allocator<GameObject*> >::back()
+                0x080063f8       0x36 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080063f8                std::vector<GameObject*, std::allocator<GameObject*> >::back()
  .text._ZSt12__niter_baseIPSt5arrayIhLj8EEET_S3_
-                0x080063de       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080063de                std::array<unsigned char, 8u>* std::__niter_base<std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*)
+                0x0800642e       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800642e                std::array<unsigned char, 8u>* std::__niter_base<std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*)
  .text._ZSt14__copy_move_a1ILb0EPSt5arrayIhLj8EES2_ET1_T0_S4_S3_
-                0x080063f4       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080063f4                std::array<unsigned char, 8u>* std::__copy_move_a1<false, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
+                0x08006444       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006444                std::array<unsigned char, 8u>* std::__copy_move_a1<false, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
  .text._ZSt12__niter_wrapIPSt5arrayIhLj8EEET_RKS3_S3_
-                0x08006414       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006414                std::array<unsigned char, 8u>* std::__niter_wrap<std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>* const&, std::array<unsigned char, 8u>*)
+                0x08006464       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006464                std::array<unsigned char, 8u>* std::__niter_wrap<std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>* const&, std::array<unsigned char, 8u>*)
  .text._ZNSt12_Vector_baseIhSaIhEE17_Vector_impl_dataC2Ev
-                0x0800642c       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800642c                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl_data::_Vector_impl_data()
-                0x0800642c                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl_data::_Vector_impl_data()
+                0x0800647c       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800647c                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl_data::_Vector_impl_data()
+                0x0800647c                std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl_data::_Vector_impl_data()
  .text._ZNSt20__uninitialized_copyILb1EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEPhEET0_T_SC_SB_
-                0x08006454       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006454                unsigned char* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
+                0x080064a4       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080064a4                unsigned char* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
  .text._ZNSt12_Destroy_auxILb1EE9__destroyIPhEEvT_S3_
-                0x08006474       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006474                void std::_Destroy_aux<true>::__destroy<unsigned char*>(unsigned char*, unsigned char*)
+                0x080064c4       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080064c4                void std::_Destroy_aux<true>::__destroy<unsigned char*>(unsigned char*, unsigned char*)
  .text._ZNSt15__new_allocatorIP10GameObjectE10deallocateEPS1_j
-                0x0800648a       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800648a                std::__new_allocator<GameObject*>::deallocate(GameObject**, unsigned int)
+                0x080064da       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080064da                std::__new_allocator<GameObject*>::deallocate(GameObject**, unsigned int)
  .text._ZNSt6vectorIhSaIhEE11_S_max_sizeERKS0_
-                0x080064a8       0x40 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080064a8                std::vector<unsigned char, std::allocator<unsigned char> >::_S_max_size(std::allocator<unsigned char> const&)
+                0x080064f8       0x40 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080064f8                std::vector<unsigned char, std::allocator<unsigned char> >::_S_max_size(std::allocator<unsigned char> const&)
  .text._ZSt18uninitialized_copyIPKhPhET0_T_S4_S3_
-                0x080064e8       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080064e8                unsigned char* std::uninitialized_copy<unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
+                0x08006538       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006538                unsigned char* std::uninitialized_copy<unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
  .text._ZNKSt6vectorIP10GameObjectSaIS1_EE12_M_check_lenEjPKc
-                0x08006510       0x8e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006510                std::vector<GameObject*, std::allocator<GameObject*> >::_M_check_len(unsigned int, char const*) const
+                0x08006560       0x8e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006560                std::vector<GameObject*, std::allocator<GameObject*> >::_M_check_len(unsigned int, char const*) const
  .text._ZN9__gnu_cxxmiIPP10GameObjectSt6vectorIS2_SaIS2_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSA_SD_
-                0x0800659e       0x2a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800659e                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::difference_type __gnu_cxx::operator-<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >(__gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&, __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&)
+                0x080065ee       0x2a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080065ee                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::difference_type __gnu_cxx::operator-<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >(__gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&, __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > > const&)
  .text._ZNSt12_Vector_baseIP10GameObjectSaIS1_EE11_M_allocateEj
-                0x080065c8       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080065c8                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_allocate(unsigned int)
+                0x08006618       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006618                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_allocate(unsigned int)
  .text._ZSt12__to_addressIP10GameObjectEPT_S3_
-                0x080065fa       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080065fa                GameObject** std::__to_address<GameObject*>(GameObject**)
+                0x0800664a       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800664a                GameObject** std::__to_address<GameObject*>(GameObject**)
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE11_S_relocateEPS1_S4_S4_RS2_
-                0x08006610       0x24 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006610                std::vector<GameObject*, std::allocator<GameObject*> >::_S_relocate(GameObject**, GameObject**, GameObject**, std::allocator<GameObject*>&)
+                0x08006660       0x24 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006660                std::vector<GameObject*, std::allocator<GameObject*> >::_S_relocate(GameObject**, GameObject**, GameObject**, std::allocator<GameObject*>&)
  .text._ZNSt12_Vector_baseIP10GameObjectSaIS1_EE19_M_get_Tp_allocatorEv
-                0x08006634       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006634                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_get_Tp_allocator()
+                0x08006684       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006684                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_get_Tp_allocator()
  .text._ZNK9__gnu_cxx17__normal_iteratorIPP10GameObjectSt6vectorIS2_SaIS2_EEEmiEi
-                0x0800664a       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800664a                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::operator-(int) const
+                0x0800669a       0x32 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800669a                __gnu_cxx::__normal_iterator<GameObject**, std::vector<GameObject*, std::allocator<GameObject*> > >::operator-(int) const
  .text._ZSt14__copy_move_a2ILb0EPSt5arrayIhLj8EES2_ET1_T0_S4_S3_
-                0x0800667c       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800667c                std::array<unsigned char, 8u>* std::__copy_move_a2<false, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
+                0x080066cc       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080066cc                std::array<unsigned char, 8u>* std::__copy_move_a2<false, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*>(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
  .text._ZNSt15__new_allocatorIhE10deallocateEPhj
-                0x0800669c       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800669c                std::__new_allocator<unsigned char>::deallocate(unsigned char*, unsigned int)
+                0x080066ec       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080066ec                std::__new_allocator<unsigned char>::deallocate(unsigned char*, unsigned int)
  .text._ZSt4copyIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEPhET0_T_SA_S9_
-                0x080066b6       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080066b6                unsigned char* std::copy<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
+                0x08006706       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006706                unsigned char* std::copy<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
  .text._ZSt3minIjERKT_S2_S2_
-                0x080066e6       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080066e6                unsigned int const& std::min<unsigned int>(unsigned int const&, unsigned int const&)
+                0x08006736       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006736                unsigned int const& std::min<unsigned int>(unsigned int const&, unsigned int const&)
  .text._ZNSt15__new_allocatorIhE8allocateEjPKv
-                0x0800670e       0x44 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800670e                std::__new_allocator<unsigned char>::allocate(unsigned int, void const*)
+                0x0800675e       0x44 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800675e                std::__new_allocator<unsigned char>::allocate(unsigned int, void const*)
  .text._ZNSt20__uninitialized_copyILb1EE13__uninit_copyIPKhPhEET0_T_S6_S5_
-                0x08006752       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006752                unsigned char* std::__uninitialized_copy<true>::__uninit_copy<unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
+                0x080067a2       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080067a2                unsigned char* std::__uninitialized_copy<true>::__uninit_copy<unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
  .text._ZNKSt6vectorIP10GameObjectSaIS1_EE8max_sizeEv
-                0x08006772       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006772                std::vector<GameObject*, std::allocator<GameObject*> >::max_size() const
+                0x080067c2       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080067c2                std::vector<GameObject*, std::allocator<GameObject*> >::max_size() const
  .text._ZNKSt6vectorIP10GameObjectSaIS1_EE4sizeEv
-                0x08006794       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006794                std::vector<GameObject*, std::allocator<GameObject*> >::size() const
+                0x080067e4       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080067e4                std::vector<GameObject*, std::allocator<GameObject*> >::size() const
  .text._ZSt3maxIjERKT_S2_S2_
-                0x080067b4       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080067b4                unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+                0x08006804       0x28 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006804                unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
  .text._ZSt12__relocate_aIPP10GameObjectS2_SaIS1_EET0_T_S5_S4_RT1_
-                0x080067dc       0x3a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080067dc                GameObject** std::__relocate_a<GameObject**, GameObject**, std::allocator<GameObject*> >(GameObject**, GameObject**, GameObject**, std::allocator<GameObject*>&)
+                0x0800682c       0x3a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800682c                GameObject** std::__relocate_a<GameObject**, GameObject**, std::allocator<GameObject*> >(GameObject**, GameObject**, GameObject**, std::allocator<GameObject*>&)
  .text._ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mISt5arrayIhLj8EES4_EEPT0_PT_S8_S6_
-                0x08006816       0x54 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006816                std::array<unsigned char, 8u>* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<std::array<unsigned char, 8u>, std::array<unsigned char, 8u> >(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
+                0x08006866       0x54 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006866                std::array<unsigned char, 8u>* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<std::array<unsigned char, 8u>, std::array<unsigned char, 8u> >(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
  .text._ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEET_S8_
-                0x0800686a       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800686a                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > > std::__miter_base<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > > >(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >)
+                0x080068ba       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080068ba                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > > std::__miter_base<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > > >(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >)
  .text._ZSt13__copy_move_aILb0EN9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEEEPhET1_T0_SA_S9_
-                0x08006880       0x46 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006880                unsigned char* std::__copy_move_a<false, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
+                0x080068d0       0x46 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080068d0                unsigned char* std::__copy_move_a<false, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*>(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char*)
  .text._ZSt4copyIPKhPhET0_T_S4_S3_
-                0x080068c6       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080068c6                unsigned char* std::copy<unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
+                0x08006916       0x30 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006916                unsigned char* std::copy<unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
  .text._ZNSt6vectorIP10GameObjectSaIS1_EE11_S_max_sizeERKS2_
-                0x080068f6       0x40 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080068f6                std::vector<GameObject*, std::allocator<GameObject*> >::_S_max_size(std::allocator<GameObject*> const&)
+                0x08006946       0x40 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006946                std::vector<GameObject*, std::allocator<GameObject*> >::_S_max_size(std::allocator<GameObject*> const&)
  .text._ZNKSt12_Vector_baseIP10GameObjectSaIS1_EE19_M_get_Tp_allocatorEv
-                0x08006936       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006936                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_get_Tp_allocator() const
+                0x08006986       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006986                std::_Vector_base<GameObject*, std::allocator<GameObject*> >::_M_get_Tp_allocator() const
  .text._ZNSt15__new_allocatorIP10GameObjectE8allocateEjPKv
-                0x0800694c       0x54 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x0800694c                std::__new_allocator<GameObject*>::allocate(unsigned int, void const*)
+                0x0800699c       0x54 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x0800699c                std::__new_allocator<GameObject*>::allocate(unsigned int, void const*)
  .text._ZSt12__niter_baseIPP10GameObjectET_S3_
-                0x080069a0       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080069a0                GameObject** std::__niter_base<GameObject**>(GameObject**)
+                0x080069f0       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080069f0                GameObject** std::__niter_base<GameObject**>(GameObject**)
  .text._ZSt14__relocate_a_1IP10GameObjectS1_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS4_E4typeES6_S6_S6_RSaIT0_E
-                0x080069b6       0x40 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080069b6                std::enable_if<std::__is_bitwise_relocatable<GameObject*, void>::value, GameObject**>::type std::__relocate_a_1<GameObject*, GameObject*>(GameObject**, GameObject**, GameObject**, std::allocator<GameObject*>&)
+                0x08006a06       0x40 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006a06                std::enable_if<std::__is_bitwise_relocatable<GameObject*, void>::value, GameObject**>::type std::__relocate_a_1<GameObject*, GameObject*>(GameObject**, GameObject**, GameObject**, std::allocator<GameObject*>&)
  .text._ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_oneISt5arrayIhLj8EES4_EEvPT_PT0_
-                0x080069f6       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x080069f6                void std::__copy_move<false, false, std::random_access_iterator_tag>::__assign_one<std::array<unsigned char, 8u>, std::array<unsigned char, 8u> >(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
+                0x08006a46       0x22 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006a46                void std::__copy_move<false, false, std::random_access_iterator_tag>::__assign_one<std::array<unsigned char, 8u>, std::array<unsigned char, 8u> >(std::array<unsigned char, 8u>*, std::array<unsigned char, 8u>*)
  .text._ZSt12__niter_baseIPKhSt6vectorIhSaIhEEET_N9__gnu_cxx17__normal_iteratorIS5_T0_EE
-                0x08006a18       0x1c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006a18                unsigned char const* std::__niter_base<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >)
+                0x08006a68       0x1c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006a68                unsigned char const* std::__niter_base<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >(__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >)
  .text._ZSt12__niter_baseIPhET_S1_
-                0x08006a34       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006a34                unsigned char* std::__niter_base<unsigned char*>(unsigned char*)
+                0x08006a84       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006a84                unsigned char* std::__niter_base<unsigned char*>(unsigned char*)
  .text._ZSt14__copy_move_a1ILb0EPKhPhET1_T0_S4_S3_
-                0x08006a4a       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006a4a                unsigned char* std::__copy_move_a1<false, unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
+                0x08006a9a       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006a9a                unsigned char* std::__copy_move_a1<false, unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
  .text._ZSt12__niter_wrapIPhET_RKS1_S1_
-                0x08006a6a       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006a6a                unsigned char* std::__niter_wrap<unsigned char*>(unsigned char* const&, unsigned char*)
+                0x08006aba       0x18 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006aba                unsigned char* std::__niter_wrap<unsigned char*>(unsigned char* const&, unsigned char*)
  .text._ZSt12__miter_baseIPKhET_S2_
-                0x08006a82       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006a82                unsigned char const* std::__miter_base<unsigned char const*>(unsigned char const*)
+                0x08006ad2       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006ad2                unsigned char const* std::__miter_base<unsigned char const*>(unsigned char const*)
  .text._ZSt13__copy_move_aILb0EPKhPhET1_T0_S4_S3_
-                0x08006a98       0x46 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006a98                unsigned char* std::__copy_move_a<false, unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
+                0x08006ae8       0x46 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006ae8                unsigned char* std::__copy_move_a<false, unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
  .text._ZNK9__gnu_cxx17__normal_iteratorIPKhSt6vectorIhSaIhEEE4baseEv
-                0x08006ade       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006ade                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >::base() const
+                0x08006b2e       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006b2e                __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >::base() const
  .text._ZSt14__copy_move_a2ILb0EPKhPhET1_T0_S4_S3_
-                0x08006af4       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006af4                unsigned char* std::__copy_move_a2<false, unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
+                0x08006b44       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006b44                unsigned char* std::__copy_move_a2<false, unsigned char const*, unsigned char*>(unsigned char const*, unsigned char const*, unsigned char*)
  .text._ZSt12__niter_baseIPKhET_S2_
-                0x08006b14       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006b14                unsigned char const* std::__niter_base<unsigned char const*>(unsigned char const*)
+                0x08006b64       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006b64                unsigned char const* std::__niter_base<unsigned char const*>(unsigned char const*)
  .text._ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIKhhEEPT0_PT_S7_S5_
-                0x08006b2a       0x4e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006b2a                unsigned char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<unsigned char const, unsigned char>(unsigned char const*, unsigned char const*, unsigned char*)
+                0x08006b7a       0x4e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006b7a                unsigned char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<unsigned char const, unsigned char>(unsigned char const*, unsigned char const*, unsigned char*)
  .text._ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE12__assign_oneIhKhEEvPT_PT0_
-                0x08006b78       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006b78                void std::__copy_move<false, false, std::random_access_iterator_tag>::__assign_one<unsigned char, unsigned char const>(unsigned char*, unsigned char const*)
- *fill*         0x08006b96        0x2 
+                0x08006bc8       0x1e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006bc8                void std::__copy_move<false, false, std::random_access_iterator_tag>::__assign_one<unsigned char, unsigned char const>(unsigned char*, unsigned char const*)
+ *fill*         0x08006be6        0x2 
  .text._Z41__static_initialization_and_destruction_0v
-                0x08006b98       0x24 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006be8       0x24 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
  .text._ZNSt6vectorIP10GameObjectSaIS1_EED2Ev
-                0x08006bbc       0x3c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006bbc                std::vector<GameObject*, std::allocator<GameObject*> >::~vector()
-                0x08006bbc                std::vector<GameObject*, std::allocator<GameObject*> >::~vector()
+                0x08006c0c       0x3c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006c0c                std::vector<GameObject*, std::allocator<GameObject*> >::~vector()
+                0x08006c0c                std::vector<GameObject*, std::allocator<GameObject*> >::~vector()
  .text._ZSt8_DestroyIPP10GameObjectEvT_S3_
-                0x08006bf8       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006bf8                void std::_Destroy<GameObject**>(GameObject**, GameObject**)
+                0x08006c48       0x1a CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006c48                void std::_Destroy<GameObject**>(GameObject**, GameObject**)
  .text._ZNSt12_Destroy_auxILb1EE9__destroyIPP10GameObjectEEvT_S5_
-                0x08006c12       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08006c12                void std::_Destroy_aux<true>::__destroy<GameObject**>(GameObject**, GameObject**)
+                0x08006c62       0x16 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006c62                void std::_Destroy_aux<true>::__destroy<GameObject**>(GameObject**, GameObject**)
  .text._GLOBAL__sub_I_objects
-                0x08006c28        0xa CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08006c78        0xa CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
  .text._ZN11GameManager16get_player_inputEh
-                0x08006c32       0x2a CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
-                0x08006c32                GameManager::get_player_input(unsigned char)
+                0x08006c82       0x30 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+                0x08006c82                GameManager::get_player_input(unsigned char)
  .text._ZN11GameManager14set_delta_timeEd
-                0x08006c5c       0x22 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
-                0x08006c5c                GameManager::set_delta_time(double)
+                0x08006cb2       0x22 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+                0x08006cb2                GameManager::set_delta_time(double)
  .text._ZN11GameManager14get_delta_timeEv
-                0x08006c7e       0x24 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
-                0x08006c7e                GameManager::get_delta_time()
+                0x08006cd4       0x24 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+                0x08006cd4                GameManager::get_delta_time()
  .text.__aeabi_atexit
-                0x08006ca2        0xa C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
-                0x08006ca2                __aeabi_atexit
- .text._ZdlPvj  0x08006cac        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
-                0x08006cac                operator delete(void*, unsigned int)
- .text._Znwj    0x08006cb0       0x22 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_op.o)
-                0x08006cb0                operator new(unsigned int)
- .text._Znaj    0x08006cd2        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_opv.o)
-                0x08006cd2                operator new[](unsigned int)
+                0x08006cf8        0xa C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
+                0x08006cf8                __aeabi_atexit
+ .text._ZdlPvj  0x08006d02        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
+                0x08006d02                operator delete(void*, unsigned int)
+ .text._Znwj    0x08006d06       0x22 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_op.o)
+                0x08006d06                operator new(unsigned int)
+ .text._Znaj    0x08006d28        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_opv.o)
+                0x08006d28                operator new[](unsigned int)
  .text.unlikely._ZSt17__throw_bad_allocv
-                0x08006cd6        0x6 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
-                0x08006cd6                std::__throw_bad_alloc()
+                0x08006d2c        0x6 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
+                0x08006d2c                std::__throw_bad_alloc()
  .text.unlikely._ZSt28__throw_bad_array_new_lengthv
-                0x08006cdc        0x6 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
-                0x08006cdc                std::__throw_bad_array_new_length()
+                0x08006d32        0x6 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
+                0x08006d32                std::__throw_bad_array_new_length()
  .text.unlikely._ZSt20__throw_length_errorPKc
-                0x08006ce2        0x6 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
-                0x08006ce2                std::__throw_length_error(char const*)
- .text._ZdlPv   0x08006ce8        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
-                0x08006ce8                operator delete(void*)
+                0x08006d38        0x6 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
+                0x08006d38                std::__throw_length_error(char const*)
+ .text._ZdlPv   0x08006d3e        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
+                0x08006d3e                operator delete(void*)
+ *fill*         0x08006d42        0x2 
  .text._ZSt15get_new_handlerv
-                0x08006cec       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_handler.o)
-                0x08006cec                std::get_new_handler()
- .text.abort    0x08006cfc        0xe C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
-                0x08006cfc                abort
- *fill*         0x08006d0a        0x2 
- .text.malloc   0x08006d0c       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
-                0x08006d0c                malloc
- .text.free     0x08006d1c       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
-                0x08006d1c                free
+                0x08006d44       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_handler.o)
+                0x08006d44                std::get_new_handler()
+ .text.abort    0x08006d54        0xe C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
+                0x08006d54                abort
+ *fill*         0x08006d62        0x2 
+ .text.malloc   0x08006d64       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+                0x08006d64                malloc
+ .text.free     0x08006d74       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+                0x08006d74                free
  .text.sbrk_aligned
-                0x08006d2c       0x44 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+                0x08006d84       0x44 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x08006d70      0x100 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
-                0x08006d70                _malloc_r
+                0x08006dc8      0x100 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+                0x08006dc8                _malloc_r
  .text.__malloc_lock
-                0x08006e70        0xc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
-                0x08006e70                __malloc_lock
+                0x08006ec8        0xc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+                0x08006ec8                __malloc_lock
  .text.__malloc_unlock
-                0x08006e7c        0xc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
-                0x08006e7c                __malloc_unlock
+                0x08006ed4        0xc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+                0x08006ed4                __malloc_unlock
  .text.__cxa_atexit
-                0x08006e88       0x1c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
-                0x08006e88                __cxa_atexit
- .text.memmove  0x08006ea4       0x32 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
-                0x08006ea4                memmove
- .text.memset   0x08006ed6       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
-                0x08006ed6                memset
+                0x08006ee0       0x1c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
+                0x08006ee0                __cxa_atexit
+ .text.memmove  0x08006efc       0x32 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
+                0x08006efc                memmove
+ .text.memset   0x08006f2e       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
+                0x08006f2e                memset
  .text._raise_r
-                0x08006ee6       0x50 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
-                0x08006ee6                _raise_r
- *fill*         0x08006f36        0x2 
- .text.raise    0x08006f38       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
-                0x08006f38                raise
- .text._kill_r  0x08006f48       0x24 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
-                0x08006f48                _kill_r
+                0x08006f3e       0x50 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+                0x08006f3e                _raise_r
+ *fill*         0x08006f8e        0x2 
+ .text.raise    0x08006f90       0x10 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+                0x08006f90                raise
+ .text._kill_r  0x08006fa0       0x24 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+                0x08006fa0                _kill_r
  .text._getpid_r
-                0x08006f6c        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
-                0x08006f6c                _getpid_r
- .text._sbrk_r  0x08006f70       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
-                0x08006f70                _sbrk_r
- .text.__errno  0x08006f90        0xc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
-                0x08006f90                __errno
+                0x08006fc4        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+                0x08006fc4                _getpid_r
+ .text._sbrk_r  0x08006fc8       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+                0x08006fc8                _sbrk_r
+ .text.__errno  0x08006fe8        0xc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
+                0x08006fe8                __errno
  .text.__libc_init_array
-                0x08006f9c       0x48 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
-                0x08006f9c                __libc_init_array
+                0x08006ff4       0x48 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
+                0x08006ff4                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x08006fe4        0x2 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
-                0x08006fe4                __retarget_lock_acquire_recursive
+                0x0800703c        0x2 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+                0x0800703c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08006fe6        0x2 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
-                0x08006fe6                __retarget_lock_release_recursive
- .text.memcpy   0x08006fe8       0x1c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
-                0x08006fe8                memcpy
- .text._free_r  0x08007004       0x94 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
-                0x08007004                _free_r
+                0x0800703e        0x2 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+                0x0800703e                __retarget_lock_release_recursive
+ .text.memcpy   0x08007040       0x1c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+                0x08007040                memcpy
+ .text._free_r  0x0800705c       0x94 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
+                0x0800705c                _free_r
  *(.glue_7)
- .glue_7        0x08007098        0x0 linker stubs
+ .glue_7        0x080070f0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08007098        0x0 linker stubs
+ .glue_7t       0x080070f0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08007098        0x0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x080070f0        0x0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08007098        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08007098                _init
- .init          0x0800709c        0x8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x080070f0        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080070f0                _init
+ .init          0x080070f4        0x8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x080070a4        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x080070a4                _fini
- .fini          0x080070a8        0x8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x080070b0                        . = ALIGN (0x4)
-                0x080070b0                        _etext = .
+ .fini          0x080070fc        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080070fc                _fini
+ .fini          0x08007100        0x8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08007108                        . = ALIGN (0x4)
+                0x08007108                        _etext = .
 
-.vfp11_veneer   0x080070b0        0x0
- .vfp11_veneer  0x080070b0        0x0 linker stubs
+.vfp11_veneer   0x08007108        0x0
+ .vfp11_veneer  0x08007108        0x0 linker stubs
 
-.v4_bx          0x080070b0        0x0
- .v4_bx         0x080070b0        0x0 linker stubs
+.v4_bx          0x08007108        0x0
+ .v4_bx         0x08007108        0x0 linker stubs
 
-.iplt           0x080070b0        0x0
- .iplt          0x080070b0        0x0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08007108        0x0
+ .iplt          0x08007108        0x0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x080070b0       0xc8
-                0x080070b0                        . = ALIGN (0x4)
+.rodata         0x08007108       0xc8
+                0x08007108                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x080070b0        0xc CMakeFiles/Testing.dir/Core/Src/ssd_1306.cpp.obj
- .rodata        0x080070bc       0x4e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+ .rodata        0x08007108        0xc CMakeFiles/Testing.dir/Core/Src/ssd_1306.cpp.obj
+ .rodata        0x08007114       0x4e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
  *(.rodata*)
- *fill*         0x0800710a        0x2 
+ *fill*         0x08007162        0x2 
  .rodata.AHBPrescTable
-                0x0800710c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800710c                AHBPrescTable
+                0x08007164       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08007164                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800711c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800711c                APBPrescTable
+                0x08007174        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08007174                APBPrescTable
  .rodata.flagBitshiftOffset.0
-                0x08007124        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0800717c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .rodata._ZTV10GameObject
-                0x0800712c        0xc CMakeFiles/Testing.dir/Core/Src/game_object.cpp.obj
-                0x0800712c                vtable for GameObject
+                0x08007184        0xc CMakeFiles/Testing.dir/Core/Src/game_object.cpp.obj
+                0x08007184                vtable for GameObject
  .rodata._ZTV11PlayerGnorp
-                0x08007138        0xc CMakeFiles/Testing.dir/Core/Src/player_gnorp.cpp.obj
-                0x08007138                vtable for PlayerGnorp
- .rodata.C.0.0  0x08007144       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x08007190        0xc CMakeFiles/Testing.dir/Core/Src/player_gnorp.cpp.obj
+                0x08007190                vtable for PlayerGnorp
+ .rodata.C.0.0  0x0800719c       0x20 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
  .rodata._ZTV11GameManager
-                0x08007164       0x14 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
-                0x08007164                vtable for GameManager
-                0x08007178                        . = ALIGN (0x4)
+                0x080071bc       0x14 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+                0x080071bc                vtable for GameManager
+                0x080071d0                        . = ALIGN (0x4)
 
-.ARM.extab      0x08007178        0x0
-                0x08007178                        . = ALIGN (0x4)
+.ARM.extab      0x080071d0        0x0
+                0x080071d0                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08007178                        . = ALIGN (0x4)
+                0x080071d0                        . = ALIGN (0x4)
 
-.ARM            0x08007178        0x8
-                0x08007178                        . = ALIGN (0x4)
-                0x08007178                        __exidx_start = .
+.ARM            0x080071d0        0x8
+                0x080071d0                        . = ALIGN (0x4)
+                0x080071d0                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08007178        0x8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x08007180                        __exidx_end = .
-                0x08007180                        . = ALIGN (0x4)
+ .ARM.exidx     0x080071d0        0x8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x080071d8                        __exidx_end = .
+                0x080071d8                        . = ALIGN (0x4)
 
-.preinit_array  0x08007180        0x0
-                0x08007180                        . = ALIGN (0x4)
-                0x08007180                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080071d8        0x0
+                0x080071d8                        . = ALIGN (0x4)
+                0x080071d8                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08007180                        PROVIDE (__preinit_array_end = .)
-                0x08007180                        . = ALIGN (0x4)
+                0x080071d8                        PROVIDE (__preinit_array_end = .)
+                0x080071d8                        . = ALIGN (0x4)
 
-.init_array     0x08007180        0x8
-                0x08007180                        . = ALIGN (0x4)
-                0x08007180                        PROVIDE (__init_array_start = .)
+.init_array     0x080071d8        0x8
+                0x080071d8                        . = ALIGN (0x4)
+                0x080071d8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08007180        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x08007184        0x4 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
-                0x08007188                        PROVIDE (__init_array_end = .)
-                0x08007188                        . = ALIGN (0x4)
+ .init_array    0x080071d8        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x080071dc        0x4 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+                0x080071e0                        PROVIDE (__init_array_end = .)
+                0x080071e0                        . = ALIGN (0x4)
 
-.fini_array     0x08007188        0x4
-                0x08007188                        . = ALIGN (0x4)
+.fini_array     0x080071e0        0x4
+                0x080071e0                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08007188        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x080071e0        0x4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0800718c                        . = ALIGN (0x4)
-                0x0800718c                        _sidata = LOADADDR (.data)
+                0x080071e4                        . = ALIGN (0x4)
+                0x080071e4                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x0800718c        0x0
- .rel.iplt      0x0800718c        0x0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x080071e4        0x0
+ .rel.iplt      0x080071e4        0x0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x60 load address 0x0800718c
+.data           0x20000000       0x60 load address 0x080071e4
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -6338,10 +6339,10 @@ LOAD C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1
  *(.RamFunc*)
                 0x20000060                        . = ALIGN (0x4)
 
-.igot.plt       0x20000060        0x0 load address 0x080071ec
+.igot.plt       0x20000060        0x0 load address 0x08007244
  .igot.plt      0x20000060        0x0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x20000060        0x0 load address 0x080071ec
+.tdata          0x20000060        0x0 load address 0x08007244
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000060                        . = ALIGN (0x4)
                 0x20000060                        _edata = .
@@ -6358,7 +6359,7 @@ LOAD C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x20000060        0x0 load address 0x080071ec
+.tbss           0x20000060        0x0 load address 0x08007244
                 0x20000060                        _sbss = .
                 0x20000060                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
@@ -6375,7 +6376,7 @@ LOAD C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x20000060      0x754 load address 0x080071ec
+.bss            0x20000060      0x754 load address 0x08007244
  *(.bss)
  .bss           0x20000060       0x1c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.bss*)
@@ -6428,7 +6429,7 @@ LOAD C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x200007b4      0x604 load address 0x080071ec
+                0x200007b4      0x604 load address 0x08007244
                 0x200007b8                        . = ALIGN (0x8)
  *fill*         0x200007b4        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -6608,7 +6609,7 @@ LOAD linker stubs
  .comment       0x00000043       0x44 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
  .comment       0x00000043       0x44 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
 
-.debug_info     0x00000000    0x2c1f7
+.debug_info     0x00000000    0x2c1e9
  .debug_info    0x00000000      0x53e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_info    0x0000053e      0xce0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_info    0x0000121e      0x905 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -6631,27 +6632,27 @@ LOAD linker stubs
  .debug_info    0x00018087     0x2615 CMakeFiles/Testing.dir/Core/Src/game_object.cpp.obj
  .debug_info    0x0001a69c     0x2095 CMakeFiles/Testing.dir/Core/Src/player_gnorp.cpp.obj
  .debug_info    0x0001c731     0x8286 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
- .debug_info    0x000249b7      0xe2b CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
- .debug_info    0x000257e2       0xd8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
- .debug_info    0x000258ba      0x7a0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
- .debug_info    0x0002605a      0x9bc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_info    0x00026a16      0x76b C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_info    0x00027181      0x20a C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
- .debug_info    0x0002738b      0xfb8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_info    0x00028343      0x10f C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_info    0x00028452       0xe0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_info    0x00028532      0xa13 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
- .debug_info    0x00028f45      0x8a1 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_info    0x000297e6      0x715 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-impure.o)
- .debug_info    0x00029efb      0x7ea C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
- .debug_info    0x0002a6e5      0x782 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_info    0x0002ae67      0x6fb C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_info    0x0002b562      0x10b C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_info    0x0002b66d      0x218 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_info    0x0002b885      0x121 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_info    0x0002b9a6      0x851 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_info    0x000249b7      0xe1d CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+ .debug_info    0x000257d4       0xd8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
+ .debug_info    0x000258ac      0x7a0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+ .debug_info    0x0002604c      0x9bc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_info    0x00026a08      0x76b C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_info    0x00027173      0x20a C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
+ .debug_info    0x0002737d      0xfb8 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_info    0x00028335      0x10f C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_info    0x00028444       0xe0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_info    0x00028524      0xa13 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+ .debug_info    0x00028f37      0x8a1 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_info    0x000297d8      0x715 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-impure.o)
+ .debug_info    0x00029eed      0x7ea C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+ .debug_info    0x0002a6d7      0x782 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_info    0x0002ae59      0x6fb C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_info    0x0002b554      0x10b C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_info    0x0002b65f      0x218 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_info    0x0002b877      0x121 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_info    0x0002b998      0x851 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
 
-.debug_abbrev   0x00000000     0x6491
+.debug_abbrev   0x00000000     0x6493
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_abbrev  0x0000011a      0x20e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_abbrev  0x00000328      0x2b6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -6674,25 +6675,25 @@ LOAD linker stubs
  .debug_abbrev  0x00002e64      0x6bc CMakeFiles/Testing.dir/Core/Src/game_object.cpp.obj
  .debug_abbrev  0x00003520      0x59a CMakeFiles/Testing.dir/Core/Src/player_gnorp.cpp.obj
  .debug_abbrev  0x00003aba      0xa0e CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
- .debug_abbrev  0x000044c8      0x2fb CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
- .debug_abbrev  0x000047c3       0x99 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
- .debug_abbrev  0x0000485c      0x1cf C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
- .debug_abbrev  0x00004a2b      0x24a C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_abbrev  0x00004c75      0x1bf C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_abbrev  0x00004e34      0x157 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
- .debug_abbrev  0x00004f8b      0x424 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_abbrev  0x000053af       0xac C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_abbrev  0x0000545b       0x9e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_abbrev  0x000054f9      0x24e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
- .debug_abbrev  0x00005747      0x1f7 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_abbrev  0x0000593e      0x149 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-impure.o)
- .debug_abbrev  0x00005a87      0x1fd C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
- .debug_abbrev  0x00005c84      0x1da C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_abbrev  0x00005e5e      0x15e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_abbrev  0x00005fbc       0xc9 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_abbrev  0x00006085      0x115 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_abbrev  0x0000619a       0xc1 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_abbrev  0x0000625b      0x236 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_abbrev  0x000044c8      0x2fd CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+ .debug_abbrev  0x000047c5       0x99 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
+ .debug_abbrev  0x0000485e      0x1cf C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+ .debug_abbrev  0x00004a2d      0x24a C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_abbrev  0x00004c77      0x1bf C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_abbrev  0x00004e36      0x157 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
+ .debug_abbrev  0x00004f8d      0x424 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_abbrev  0x000053b1       0xac C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_abbrev  0x0000545d       0x9e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x000054fb      0x24e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+ .debug_abbrev  0x00005749      0x1f7 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_abbrev  0x00005940      0x149 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-impure.o)
+ .debug_abbrev  0x00005a89      0x1fd C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+ .debug_abbrev  0x00005c86      0x1da C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_abbrev  0x00005e60      0x15e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x00005fbe       0xc9 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_abbrev  0x00006087      0x115 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_abbrev  0x0000619c       0xc1 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_abbrev  0x0000625d      0x236 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
 
 .debug_aranges  0x00000000     0x18c0
  .debug_aranges
@@ -7088,7 +7089,7 @@ LOAD linker stubs
  .debug_macro   0x00029779      0x676 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
  .debug_macro   0x00029def      0x67d CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
 
-.debug_line     0x00000000    0x1e333
+.debug_line     0x00000000    0x1e33e
  .debug_line    0x00000000      0x870 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x00000870     0x1237 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_line    0x00001aa7      0xefb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -7110,26 +7111,26 @@ LOAD linker stubs
  .debug_line    0x000148cf     0x1652 CMakeFiles/Testing.dir/Core/Src/draw_helpers.cpp.obj
  .debug_line    0x00015f21     0x129a CMakeFiles/Testing.dir/Core/Src/game_object.cpp.obj
  .debug_line    0x000171bb     0x1131 CMakeFiles/Testing.dir/Core/Src/player_gnorp.cpp.obj
- .debug_line    0x000182ec     0x24af CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
- .debug_line    0x0001a79b     0x106f CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
- .debug_line    0x0001b80a      0x167 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
- .debug_line    0x0001b971      0x201 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
- .debug_line    0x0001bb72      0x4e5 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_line    0x0001c057      0x1ed C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_line    0x0001c244      0x132 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
- .debug_line    0x0001c376      0x5d1 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_line    0x0001c947      0x1bb C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_line    0x0001cb02      0x17e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_line    0x0001cc80      0x455 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
- .debug_line    0x0001d0d5      0x2f5 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_line    0x0001d3ca      0x163 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-impure.o)
- .debug_line    0x0001d52d      0x250 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
- .debug_line    0x0001d77d      0x21f C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_line    0x0001d99c      0x185 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_line    0x0001db21      0x168 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_line    0x0001dc89      0x19b C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_line    0x0001de24      0x202 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_line    0x0001e026      0x30d C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_line    0x000182ec     0x24b7 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+ .debug_line    0x0001a7a3     0x1072 CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+ .debug_line    0x0001b815      0x167 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
+ .debug_line    0x0001b97c      0x201 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+ .debug_line    0x0001bb7d      0x4e5 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_line    0x0001c062      0x1ed C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_line    0x0001c24f      0x132 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
+ .debug_line    0x0001c381      0x5d1 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_line    0x0001c952      0x1bb C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_line    0x0001cb0d      0x17e C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_line    0x0001cc8b      0x455 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+ .debug_line    0x0001d0e0      0x2f5 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_line    0x0001d3d5      0x163 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-impure.o)
+ .debug_line    0x0001d538      0x250 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+ .debug_line    0x0001d788      0x21f C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_line    0x0001d9a7      0x185 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_line    0x0001db2c      0x168 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_line    0x0001dc94      0x19b C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_line    0x0001de2f      0x202 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_line    0x0001e031      0x30d C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
 
 .debug_str      0x00000000    0xb43bb
  .debug_str     0x00000000    0xb43bb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -7175,7 +7176,7 @@ LOAD linker stubs
  .debug_str     0x000b43bb      0x22f C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
  .debug_str     0x000b43bb      0x5b1 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
 
-.debug_frame    0x00000000     0x61cc
+.debug_frame    0x00000000     0x61c4
  .debug_frame   0x00000000       0x50 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_frame   0x00000050      0x3bc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_frame   0x0000040c      0x1d8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -7196,38 +7197,38 @@ LOAD linker stubs
  .debug_frame   0x00004468      0x1d8 CMakeFiles/Testing.dir/Core/Src/draw_helpers.cpp.obj
  .debug_frame   0x00004640       0xa4 CMakeFiles/Testing.dir/Core/Src/game_object.cpp.obj
  .debug_frame   0x000046e4       0x34 CMakeFiles/Testing.dir/Core/Src/player_gnorp.cpp.obj
- .debug_frame   0x00004718     0x1044 CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
- .debug_frame   0x0000575c       0x7c CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
- .debug_frame   0x000057d8       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
- .debug_frame   0x000057f8       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
- .debug_frame   0x00005818       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_op.o)
- .debug_frame   0x00005840       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_opv.o)
- .debug_frame   0x00005860      0x184 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
- .debug_frame   0x000059e4       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
- .debug_frame   0x00005a04       0x30 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_handler.o)
- .debug_frame   0x00005a34       0xac C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00005ae0       0x50 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00005b30       0xc4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00005bf4       0x24 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x00005c18       0x2c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00005c44       0x34 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00005c78       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
- .debug_frame   0x00005ca0       0x30 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
- .debug_frame   0x00005cd0       0x50 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_frame   0x00005d20       0x30 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_frame   0x00005d50       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
- .debug_frame   0x00005d78      0x144 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_frame   0x00005ebc       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_frame   0x00005ee4       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00005f04       0xcc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
- .debug_frame   0x00005fd0       0x38 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_frame   0x00006008       0x3c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
- .debug_frame   0x00006044       0x2c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_frame   0x00006070       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_frame   0x00006090       0x2c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_frame   0x000060bc       0xb0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_frame   0x0000616c       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_frame   0x00006194       0x38 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_frame   0x00004718     0x103c CMakeFiles/Testing.dir/Core/Src/game_logic.cpp.obj
+ .debug_frame   0x00005754       0x7c CMakeFiles/Testing.dir/Core/Src/game_manager.cpp.obj
+ .debug_frame   0x000057d0       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(atexit_arm.o)
+ .debug_frame   0x000057f0       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_ops.o)
+ .debug_frame   0x00005810       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_op.o)
+ .debug_frame   0x00005838       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_opv.o)
+ .debug_frame   0x00005858      0x184 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(functexcept.o)
+ .debug_frame   0x000059dc       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(del_op.o)
+ .debug_frame   0x000059fc       0x30 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a(new_handler.o)
+ .debug_frame   0x00005a2c       0xac C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00005ad8       0x50 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00005b28       0xc4 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00005bec       0x24 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00005c10       0x2c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00005c3c       0x34 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00005c70       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
+ .debug_frame   0x00005c98       0x30 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+ .debug_frame   0x00005cc8       0x50 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x00005d18       0x30 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_frame   0x00005d48       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-cxa_atexit.o)
+ .debug_frame   0x00005d70      0x144 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_frame   0x00005eb4       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_frame   0x00005edc       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00005efc       0xcc C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+ .debug_frame   0x00005fc8       0x38 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_frame   0x00006000       0x3c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+ .debug_frame   0x0000603c       0x2c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_frame   0x00006068       0x20 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_frame   0x00006088       0x2c C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_frame   0x000060b4       0xb0 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_frame   0x00006164       0x28 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x0000618c       0x38 C:/Users/Vanessa/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
 
 .debug_line_str
                 0x00000000       0x6c

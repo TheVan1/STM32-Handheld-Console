@@ -13,13 +13,13 @@
 
 class GameManager {
     private:
-    uint8_t player_inputs[2];
-    double delta_time;
+        double delta_time;
 
     
     public:
 
         GameManager() {}
+        uint32_t *player_inputs;
         std::array<std::array<uint8_t, 8>, 128> frame_buffer;
         virtual uint8_t get_player_input(uint8_t axis);
         virtual void set_delta_time(double delta_time);

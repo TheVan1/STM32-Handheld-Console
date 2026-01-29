@@ -44,6 +44,7 @@ extern "C" void game_init(TIM_HandleTypeDef *timer, ADC_HandleTypeDef *adc) {
   player->manager = manager;
   objects.push_back(player);
   manager->frame_buffer = frame;
+  manager->player_inputs = adc_data;
 
   while (1) {
     /*------------Frame Preparation------------*/
@@ -65,27 +66,36 @@ extern "C" void game_init(TIM_HandleTypeDef *timer, ADC_HandleTypeDef *adc) {
     /*--------Frame Drawing and Tick Logic--------*/
     for (GameObject *object : objects) {
       object->Update();
-      
+
       if ((object->flags |= (FLAG_GRAVITY_ENABLED & FLAG_DYNAMIC_OBJECT)))
-        object->velocity_y -= 200 * delta_time;
+        object->velocity_y -= 400 * delta_time;
 
       object->x += object->velocity_x * delta_time;
       object->y += object->velocity_y * delta_time;
 
-      if (object->x >= 128 && object->velocity_x > 0)
-        object->velocity_x *= -1;
-      if (object->x <= 0 && object->velocity_x < 0)
-        object->velocity_x *= -1;
+      if (object->x >= 128 && object->velocity_x > 0) {
+        object->velocity_x *= -0.4;
+        object->x = 128;
+      }
 
-      if (object->y >= 64 && object->velocity_y > 0)
-        object->velocity_y *= -1;
-      if (object->y <= 0 && object->velocity_y < 0)
+      if (object->x <= 0 && object->velocity_x < 0) {
+        object->velocity_x *= -0.4;
+        object->x = 0;
+      }
+
+      if (object->y >= 64 && object->velocity_y > 0) {
+        object->velocity_y *= -0.4;
+        object->y = 64;
+      }
+
+      if (object->y <= 0 && object->velocity_y < 0) {
         object->velocity_y *= -0.8;
+        object->y = 0;
+      }
 
       draw_sprite(&manager->frame_buffer, object->x, object->y, object->pixels,
                   object->pixel_count);
 
-                  
       if (HAL_ADC_Start_DMA(adc, adc_data, 2) != HAL_OK) {
         /* Start Error */
         Error_Handler();
