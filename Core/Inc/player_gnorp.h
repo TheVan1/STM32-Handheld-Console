@@ -8,7 +8,7 @@
 
 class PlayerGnorp : public GameObject{
     public:
-        PlayerGnorp(uint8_t flags, std::vector<uint8_t> pixels) : GameObject( flags, pixels){}
+        PlayerGnorp(uint8_t flags, std::vector<uint8_t> pixels, GameManager * manager) : GameObject( flags, pixels, manager){}
         void Update() override;
     
 };

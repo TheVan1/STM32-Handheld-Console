@@ -9,6 +9,8 @@ void PlayerGnorp::Update(){
     velocity_x += (manager->get_player_input(0) - 128) * dtime;
     velocity_y += (manager->get_player_input(1) - 128) * dtime;
 
+    
+
     return;
     
 }

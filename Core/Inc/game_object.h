@@ -33,7 +33,7 @@ public:
   uint8_t pixel_count;
 
 
-  GameObject(uint8_t flags, std::vector<uint8_t> pixels);
+  GameObject(uint8_t flags, std::vector<uint8_t> pixels, GameManager *manager);
 
   GameManager* manager;
 

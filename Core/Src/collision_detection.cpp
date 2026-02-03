@@ -1,5 +1,6 @@
 
 #include "game_object.h"
+#include "collision_detection.h"
 #include "main.h"
 #include <cstdint>
 #include <cstdlib>
@@ -9,21 +10,20 @@
 
 #define GRID_DIMENSIONS 20
 
-void Handle_Collision(GameObject *a, GameObject *b);
+void handle_collision(GameObject *a, GameObject *b);
 
-void Detect_Collisions(std::vector<GameObject *> objects) {
+void detect_collisions(std::vector<GameObject *> objects) {
 
   for (GameObject *obj_one : objects) {
-
     for (GameObject *obj_two : objects) {
       if (obj_one == obj_two)
         continue;
-      Handle_Collision(obj_one, obj_two);
+      handle_collision(obj_one, obj_two);
     }
   }
 }
 
-void Detect_Collisions_Optimised(std::vector<GameObject *> objects) {
+void detect_collisions_optimised(std::vector<GameObject *> objects) {
 
   // this key is actually 2 signed 16 bit integers, for the X and Y axis
   std::map<uint32_t, std::vector<GameObject *> *> grid;
@@ -69,7 +69,7 @@ void Detect_Collisions_Optimised(std::vector<GameObject *> objects) {
         // can skip that
         if ((obj_one->flags & FLAG_DYNAMIC_OBJECT) == FLAG_DYNAMIC_OBJECT ||
             (obj_two->flags & FLAG_DYNAMIC_OBJECT) == FLAG_DYNAMIC_OBJECT) {
-          Handle_Collision(obj_one, obj_two);
+          handle_collision(obj_one, obj_two);
         }
       }
     }
@@ -77,7 +77,7 @@ void Detect_Collisions_Optimised(std::vector<GameObject *> objects) {
 }
 
 // TODO: Fix **all** of this
-void Handle_Collision(GameObject *a, GameObject *b) {
+void handle_collision(GameObject *a, GameObject *b) {
   double diff_x = abs(a->x - b->x);
   double diff_y = abs(a->y - b->y);
   uint8_t is_a_x_greater = a->x > b->x ? 1 : 0;
@@ -109,9 +109,6 @@ void Handle_Collision(GameObject *a, GameObject *b) {
   uint8_t is_b_dynamic =
       (b->flags & FLAG_DYNAMIC_OBJECT) == FLAG_DYNAMIC_OBJECT;
   uint8_t dynamic_count = is_a_dynamic + is_b_dynamic;
-
-  shunt_x = shunt_x / dynamic_count;
-  shunt_y = shunt_y / dynamic_count;
 
   // move our objects the respective amount, minimizing the amount moved
   if (shunt_x < shunt_y) {

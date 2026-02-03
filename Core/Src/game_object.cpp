@@ -1,4 +1,5 @@
 #include "game_object.h"
+#include "game_manager.h"
 #include "player_gnorp.h"
 #include <cstddef>
 #include <cstdint>
@@ -6,7 +7,7 @@
 #include <stdint.h>
 #include <string.h>
 
-GameObject::GameObject(uint8_t flags, std::vector<uint8_t> sprite) {
+GameObject::GameObject(uint8_t flags, std::vector<uint8_t> sprite, GameManager *manager) {
 
   this->flags = flags;
   x = 64;
@@ -58,4 +59,12 @@ GameObject::GameObject(uint8_t flags, std::vector<uint8_t> sprite) {
 
   pivot_point[0] = hitbox[0] / 2;
   pivot_point[1] = hitbox[1] / 2;
+
+  velocity_x = 0;
+  velocity_y = 0;
+  this->manager = manager;
+  x = 64;
+  y = 32;
+
+
 }
