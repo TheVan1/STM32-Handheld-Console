@@ -67,8 +67,8 @@ extern "C" void game_init(TIM_HandleTypeDef *timer, ADC_HandleTypeDef *adc) {
     for (GameObject *object : objects) {
       object->Update();
 
-      if ((object->flags |= (FLAG_GRAVITY_ENABLED & FLAG_DYNAMIC_OBJECT)))
-        object->velocity_y -= 400 * delta_time;
+      // if ((object->flags |= (FLAG_GRAVITY_ENABLED & FLAG_DYNAMIC_OBJECT)))
+      //   object->velocity_y -= 400 * delta_time;
 
       object->x += object->velocity_x * delta_time;
       object->y += object->velocity_y * delta_time;
@@ -92,6 +92,9 @@ extern "C" void game_init(TIM_HandleTypeDef *timer, ADC_HandleTypeDef *adc) {
         object->velocity_y *= -0.8;
         object->y = 0;
       }
+
+      object->velocity_x *= 0.999 * (1 - delta_time);
+      object->velocity_y *= 0.999 * (1 - delta_time);
 
       draw_sprite(&manager->frame_buffer, object->x, object->y, object->pixels,
                   object->pixel_count);
