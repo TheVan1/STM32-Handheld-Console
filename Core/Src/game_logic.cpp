@@ -41,29 +41,29 @@ extern "C" void game_init(TIM_HandleTypeDef *timer, ADC_HandleTypeDef *adc) {
   objects.push_back(player);
 
 
-  std::vector<uint8_t> vertical_box_pixels = {0, 0, 1, 128};
-  std::vector<uint8_t> horizontal_box_pixels = {0, 0, 128, 1};
+  std::vector<uint8_t> vertical_box_pixels = {0, 0, 30, 15};
+  // std::vector<uint8_t> horizontal_box_pixels = {0, 0, 126, 4};
 
   GameObject *box_one = new GameObject(0, vertical_box_pixels, manager);
-  GameObject *box_two = new GameObject(0, vertical_box_pixels, manager);
-  box_one->x = 2;
-  box_one->y = 0;
-  box_two->x = 126;
-  box_two->y = 0;
+  // GameObject *box_two = new GameObject(0, vertical_box_pixels, manager);
+  box_one->x = 30;
+  box_one->y = 32;
+  // box_two->x = 170;
+  // box_two->y = 0;
 
 
 
-  GameObject *box_three = new GameObject(0, horizontal_box_pixels, manager);
-  GameObject *box_four = new GameObject(0, horizontal_box_pixels, manager);
-  box_three->y = 2;
-  box_three->x = 0;
-  box_four->y = 62;
-  box_four->x = 0;
+  // GameObject *box_three = new GameObject(0, horizontal_box_pixels, manager);
+  // GameObject *box_four = new GameObject(0, horizontal_box_pixels, manager);
+  // box_three->y = 60;
+  // box_three->x = 0;
+  // box_four->y = 0;
+  // box_four->x =0;
 
   objects.push_back(box_one);
-  objects.push_back(box_two);
-  objects.push_back(box_three);
-  objects.push_back(box_four);
+  // objects.push_back(box_two);
+  // objects.push_back(box_three);
+  // objects.push_back(box_four);
 
 
   

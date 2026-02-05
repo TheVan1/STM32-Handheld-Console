@@ -43,7 +43,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 57,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
@@ -241,7 +241,8 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		}
 	],
@@ -296,7 +297,8 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		},
 		{
@@ -310,7 +312,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				12,
 				13,
 				14,
 				15,
@@ -330,7 +331,8 @@
 				29,
 				30,
 				31,
-				32
+				32,
+				33
 			]
 		}
 	],
@@ -406,6 +408,12 @@
 			"backtrace" : 6,
 			"compileGroupIndex" : 2,
 			"path" : "Core/Src/game_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 2,
+			"path" : "Core/Src/collision_detection.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

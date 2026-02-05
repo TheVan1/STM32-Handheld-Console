@@ -78,45 +78,67 @@ void detect_collisions_optimised(std::vector<GameObject *> objects) {
 
 // TODO: Fix **all** of this
 void handle_collision(GameObject *a, GameObject *b) {
-  double diff_x = abs(a->x - b->x);
-  double diff_y = abs(a->y - b->y);
-  uint8_t is_a_x_greater = a->x > b->x ? 1 : 0;
-  uint8_t is_a_y_greater = a->y > b->y ? 1 : 0;
-
-  double shunt_x;
-  double shunt_y;
-
-  if (is_a_x_greater) {
-    shunt_x = diff_x - a->hitbox[0];
-  } else {
-    shunt_x = diff_x - b->hitbox[0];
-  }
-
-  if (shunt_x <= 0)
-    return;
-
-  if (is_a_y_greater) {
-    shunt_y = diff_y - a->hitbox[1];
-  } else {
-    shunt_y = diff_y - b->hitbox[1];
-  }
-
-  if (shunt_y <= 0)
-    return;
 
   uint8_t is_a_dynamic =
       (a->flags & FLAG_DYNAMIC_OBJECT) == FLAG_DYNAMIC_OBJECT;
   uint8_t is_b_dynamic =
       (b->flags & FLAG_DYNAMIC_OBJECT) == FLAG_DYNAMIC_OBJECT;
+
   uint8_t dynamic_count = is_a_dynamic + is_b_dynamic;
+
+  //early return if neither of our objects is able to move (are not dynamic objects)
+  if(dynamic_count == 0) return;
+
+  // -----Collision Detection-----
+
+  double diff_x = abs(a->x - b->x);
+  double diff_y = abs(a->y - b->y);
+  uint8_t is_a_x_greater = (a->x) > (b->x) ? 1 : 0;
+  uint8_t is_a_y_greater = (a->y) > (b->y) ? 1 : 0;
+
+  double shunt_x;
+  double shunt_y;
+
+  //detect the distance between the edge of the hitbox and the current position in the hitbox
+  //a negative distance indicates that the boxes are inside one another, whereas a positive indicates that our boxes are too far apart to be touching
+  //(effectively a one dimensional SDF)
+  if (is_a_x_greater) {
+    shunt_x =  diff_x - b->hitbox[0];
+  } else {
+    shunt_x =  diff_x - a->hitbox[0];
+  }
+
+  //early return if our X axis is large enough for us to not be colliding
+  if (shunt_x > 0)
+    return;
+
+
+
+  //repeat previous steps for Y axis
+  if (is_a_y_greater) {
+    shunt_y =  diff_y - b->hitbox[1];
+  } else {
+    shunt_y =  diff_y - a->hitbox[1];
+  }
+
+  if (shunt_y > 0)
+    return;
+
+
+  
+
+
+  // -----Collision Resolution-----
+  shunt_x *= -1;
+  shunt_y *= -1;
 
   // move our objects the respective amount, minimizing the amount moved
   if (shunt_x < shunt_y) {
     double a_shunt_x = (shunt_x / dynamic_count) * is_a_dynamic;
     double b_shunt_x = (shunt_x / dynamic_count) * is_b_dynamic;
 
-    a->velocity_x = 0;
-    b->velocity_x = 0;
+    a->velocity_x *= -0.1;
+    b->velocity_x *= -0.1;
     if (is_a_x_greater) {
       a->x += a_shunt_x;
       b->x -= b_shunt_x;
@@ -128,8 +150,8 @@ void handle_collision(GameObject *a, GameObject *b) {
     double a_shunt_y = (shunt_y / dynamic_count) * is_a_dynamic;
     double b_shunt_y = (shunt_y / dynamic_count) * is_b_dynamic;
 
-    a->velocity_y = 0;
-    b->velocity_y = 0;
+    a->velocity_y *= -0.1;
+    b->velocity_y *= -0.1;
     if (is_a_y_greater) {
       a->y += a_shunt_y;
       b->y -= b_shunt_y;

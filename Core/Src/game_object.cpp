@@ -34,6 +34,9 @@ GameObject::GameObject(uint8_t flags, std::vector<uint8_t> sprite, GameManager *
   this->pixels[1] = new uint8_t[sprite.size() / 2];
   this->pixel_count = sprite.size() / 2;
 
+  hitbox[0] = 0;
+  hitbox[1] = 0;
+
   /*
   simple o(n) function to find the largest values of our pixels
   alongside our translation from vector to our arrays
@@ -66,5 +69,5 @@ GameObject::GameObject(uint8_t flags, std::vector<uint8_t> sprite, GameManager *
   x = 64;
   y = 32;
 
-
+  return;
 }

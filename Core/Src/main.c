@@ -118,6 +118,7 @@ int main(void) {
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_Delay(200);
+
   I2C_SSD1306_Screen_Init(&hi2c1);
   HAL_TIM_Base_Start_IT(&htim1);
 
