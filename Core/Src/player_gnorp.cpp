@@ -24,6 +24,6 @@ void PlayerGnorp::Update() {
 }
 
 void PlayerGnorp::OnCollision(GameObject *colliding_object) {
-  if (colliding_object->y < this->y);
+  if (colliding_object->y < this->y)
     is_jump_charged = true;
 }
