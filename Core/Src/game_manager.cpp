@@ -1,4 +1,5 @@
 
+#include "game_object.h"
 #include <cstdint>
 #include <vector>
 #include <game_manager.h>
@@ -16,5 +17,9 @@ void GameManager::set_delta_time(double delta_time){
 
 double GameManager::get_delta_time(){
     return this->delta_time;
+}
+
+double GameManager::get_time(){
+    return *this->time;
 }
 

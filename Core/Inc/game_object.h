@@ -38,6 +38,7 @@ public:
   GameManager* manager;
 
   virtual void Update(){}
+  virtual void OnCollision(GameObject * colliding_object){}
 };
 
 

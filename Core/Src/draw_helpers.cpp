@@ -10,7 +10,7 @@ void put_pixel(std::array<std::array<uint8_t, 8>, 128> *frame, int x, int y,
                uint8_t bit);
 
 // https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
-void draw_line(std::array<std::array<uint8_t, 8>, 128> frame, int x0, int y0, int x1, int y1, uint8_t bit) {
+void draw_line(std::array<std::array<uint8_t, 8>, 128> *frame, int x0, int y0, int x1, int y1, uint8_t bit) {
   int dx = abs(x1 - x0);
   int sx = x0 < x1 ? 1 : -1;
   int dy = -abs(y1 - y0);
@@ -18,7 +18,7 @@ void draw_line(std::array<std::array<uint8_t, 8>, 128> frame, int x0, int y0, in
   double error = dx + dy;
 
   while (1) {
-    put_pixel(&frame, x0, y0, bit);
+    put_pixel(frame, x0, y0, bit);
     double e2 = 2 * error;
     if (e2 >= dy) {
       if (x0 == x1)
@@ -66,7 +66,7 @@ void draw_circle(std::array<std::array<uint8_t, 8>, 128> frame, int x, int y, in
 x1, y1, x2, y2: bounding box vertices
 fill: whether it should be a lineart or solid rectangle
 */
-void draw_rectangle(std::array<std::array<uint8_t, 8>, 128> frame, int x0, int y0, int x1,
+void draw_rectangle(std::array<std::array<uint8_t, 8>, 128> *frame, int x0, int y0, int x1,
                     int y1, uint8_t bit) {
 
   draw_line(frame, x0, y0, x0, y1, bit);
@@ -75,7 +75,7 @@ void draw_rectangle(std::array<std::array<uint8_t, 8>, 128> frame, int x0, int y
   draw_line(frame, x0, y1, x1, y1, bit);
 }
 
-void draw_quadrilateral(std::array<std::array<uint8_t, 8>, 128> frame, int x0, int y0,
+void draw_quadrilateral(std::array<std::array<uint8_t, 8>, 128> *frame, int x0, int y0,
                         int x1, int y1, uint8_t x2, int y2,
                         int x3, int y3, uint8_t bit) {
   draw_line(frame, x0, y0, x1, y1, bit);
@@ -112,12 +112,13 @@ void draw_gnorp(std::array<std::array<uint8_t, 8>, 128> frame, int x, int y, uin
 }
 
 void draw_sprite(std::array<std::array<uint8_t, 8>, 128> *frame, int x, int y,
-               uint8_t *pixels[2], uint8_t length) {
+               uint8_t *pixels[2], uint8_t length, uint8_t fill) {
 
   // iterate over our vector of pixels and place them in the correct place,
   // offset by our position
   for (int i = 0; i < length; i++) {
-    put_pixel(frame, pixels[0][i] + x, pixels[1][i] + y, 1);
+    if(fill && i < length - 1) draw_line(frame, pixels[0][i] + x, pixels[1][i] + y, pixels[0][i + 1] + x, pixels[1][i + 1] + y, 1);
+    put_pixel(frame, pixels[0][i] + x, pixels[1][i] + y, 1);                 
   }
 }
 

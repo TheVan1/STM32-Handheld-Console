@@ -33,7 +33,7 @@ void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c);
 }
 
 
-void I2C_SSD1306_Update_Whole_Display(std::array<std::array<uint8_t, 8>, 128> frame);
+void I2C_SSD1306_Update_Whole_Display(std::array<std::array<uint8_t, 8>, 128>* frame);
 void I2C_SSD1306_Screen_Transmit(uint16_t data_len, uint8_t *data);
 
 #endif /* __cplusplus */

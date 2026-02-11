@@ -12,7 +12,7 @@
 #include <stdint.h>
 #include <game_object.h>
 
-void detect_collisions(std::vector<GameObject *> objects);
+void detect_collisions(std::vector<GameObject *> objects, bool effect_triggers);
 
 
 #endif 

@@ -123,7 +123,7 @@ void I2C_SSD1306_Screen_Init(I2C_HandleTypeDef *hi2c1) {
 }
 
 void I2C_SSD1306_Update_Whole_Display(
-    std::array<std::array<uint8_t, 8>, 128> frame) {
+    std::array<std::array<uint8_t, 8>, 128>* frame) {
 
   // Set the columns and pages to be written to
 
@@ -155,7 +155,7 @@ void I2C_SSD1306_Update_Whole_Display(
     for (volatile uint8_t y = 0; y < 8; y++) {
       // retrieve the current page from the 2d array, and write that into the 1d
       // array for transmission
-      uint8_t current_page = frame[x][y];
+      uint8_t current_page = (*frame)[x][y];
 
       // (7*128) + 128 + 1 = 1025
       // we skip the first byte as that is 0x40, to declare data transmission
@@ -165,7 +165,6 @@ void I2C_SSD1306_Update_Whole_Display(
 
   I2C_SSD1306_Screen_Transmit((uint16_t)12, command_data);
   I2C_SSD1306_Screen_Transmit((uint16_t)1025, data);
-
 
   return;
 }

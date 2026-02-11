@@ -18,6 +18,6 @@ void draw_rectangle(std::array<std::array<uint8_t, 8>, 128> *frame, int x0, uint
 void draw_gnorp(std::array<std::array<uint8_t, 8>, 128> *frame, int x, int y, uint8_t bit);
 void draw_text(std::array<std::array<uint8_t, 8>, 128> *frame, int x, int y, char* text, uint8_t bit);
 void draw_sprite(std::array<std::array<uint8_t, 8>, 128> *frame, int x, int y,
-               uint8_t *pixels[2], uint8_t length);
+               uint8_t *pixels[2], uint8_t length, uint8_t fill);
 
 #endif 
